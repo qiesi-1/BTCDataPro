@@ -18,8 +18,12 @@ type Params interface {
 	ParamsStr() string
 }
 
-type GetBlockHeight struct{
+type Param interface {
+	Height() int
+}
 
+type GetBlockHeight struct{
+    height int
 }
 
 func NewGetBlockByHeight(num int) []int {
