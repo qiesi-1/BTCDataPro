@@ -5,3 +5,7 @@ type RPCResult struct {
 	Error  string      `json:"error"`
 	Result interface{} `json:"result"`
 }
+
+type Result interface {
+
+}

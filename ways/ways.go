@@ -16,12 +16,12 @@ func Method(method string, params... entity.Params) {
 	rpcReq := entity.RPCRequest{}
 	rpcReq.Id = time.Now().Unix()
 	rpcReq.Jsonrpc = "2.0"
-	rpcReq.Method = method
-	if params != nil {
-		rpcReq.Params = params
-	}else {
-
-	}
+	rpcReq.Method = constants.GETNEWADDRESS
+	//if params != nil {
+	//	rpcReq.Params = params
+	//}else {
+	//
+	//}
 
 	//对结构体类型进行序列化
 	rpcBytes, err := json.Marshal(&rpcReq)
@@ -36,17 +36,13 @@ func Method(method string, params... entity.Params) {
 	client := http.Client{}
 	//实例化一个请求
 	request, err := http.NewRequest("POST", constants.RPCURL, bytes.NewBuffer(rpcBytes))
+	request.Header.Set("Encoding", "UTF-8")
+	request.Header.Set("Content-Type", "application/json")
+	request.Header.Set("Authorization", "Basic " + utils.Base64Str(constants.RPCUSER + ":" + constants.RPCPASSWORD))
 	if err != nil {
 		fmt.Println(err.Error())
 		return
 	}
-
-	//给post请求添加请求头设置
-	//key -> value
-	request.Header.Add("Encoding", "UTF-8")
-	request.Header.Add("Content-Type", "application/json")
-	//权限认证设置
-	request.Header.Add("Authorization", "Basic "+utils.Base64Str(constants.RPCUSER+":"+constants.RPCPASSWORD))
 
 	//使用客户端发送请求
 	response, err := client.Do(request)

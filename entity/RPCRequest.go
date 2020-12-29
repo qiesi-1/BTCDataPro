@@ -13,17 +13,32 @@ type RPCRequest struct {
 	Params  interface{} `json:"params"`
 }
 
+//参数标准
 type Params interface {
 	ParamsInt() int64
 	ParamsStr() string
 }
 
-type GetBlockHeight struct{}
+//获取某个特定高度的区块数据
+type GetBlockByHeight struct{}
 
-func NewGetBlockByHeight(i interface{}) interface{} {
-	return i
+func NewGetBlockByHeight(num int) []int {
+	arr := []int{num}
+	return arr
 }
 
-func (h GetBlockHeight) ParamsInt() int64 {
+func (h GetBlockByHeight) ParamsInt() int64 {
 	return h.ParamsInt()
+}
+
+//根据哈希值获取区块数据
+type Getblock struct {}
+
+func NewGetblock(s string) []string {
+	arr := []string{s}
+	return arr
+}
+
+func (s Getblock) ParamsStr() string {
+	return s.ParamsStr()
 }

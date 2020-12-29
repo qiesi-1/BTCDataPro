@@ -5,6 +5,11 @@ const RPCURL = "http://127.0.0.1:8332"
 const RPCUSER = "xiaoyang"
 const RPCPASSWORD = "714736690"
 
+//地址类型
+const ADDRESS_LEGACY = "legacy"
+const ADDRESS_P2SH_SEGWIT = "p2sh-segwit"
+const ADDRESS_BACH32 = "bach32"
+
 //命令
 /**
 获取区块数量
@@ -30,6 +35,10 @@ const GETCONNECTIONCOUNT = "getconnectioncount"
 获取某个高度的hash
  */
 const GETBLOCKBYHEIGHT = "getblockhash"
+/**
+通过区块的哈希值获取区块数据
+ */
+const GETBLOCKBYHASH = "getblock"
 /**
 获取内存池数据
  */
