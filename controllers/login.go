@@ -4,9 +4,6 @@ import (
 	"BTCDataPro/models"
 	"fmt"
 	"github.com/astaxie/beego"
-	"github.com/skip2/go-qrcode"
-	"math/rand"
-	"time"
 )
 
 type LoginController struct {
@@ -18,22 +15,9 @@ func (l *LoginController) Get(){
 }
 
 func (l *LoginController) Post(){
-	//二维码登录
-	rand.Seed(time.Now().UnixNano())
-	time := rand.Intn(1000)
-	err := qrcode.WriteFile(" 扫码呀憨憨 "+string(time), qrcode.Medium, 256, "./static/img/qrcode.png")
-	if err != nil {
-		fmt.Println(err.Error())
-		return
-	}
 	//解析客户端用户提交的登录数据
 	var user models.Users
-	//usename := l.Ctx.Request.PostForm.Get("user")
-	//pwd := l.Ctx.Request.PostForm.Get("pwd")
-	//fmt.Println(usename,pwd)
-	//user.UserName = usename
-	//user.Pwd = pwd
-	err = l.ParseForm(&user)
+	err := l.ParseForm(&user)
 	if err != nil {
 		l.Ctx.WriteString("抱歉,用户登录信息解析错误")
 		return
@@ -49,3 +33,9 @@ func (l *LoginController) Post(){
 
 	l.TplName="index.html"//跳转到主页面
 }
+
+//usename := l.Ctx.Request.PostForm.Get("user")
+//pwd := l.Ctx.Request.PostForm.Get("pwd")
+//fmt.Println(usename,pwd)
+//user.UserName = usename
+//user.Pwd = pwd

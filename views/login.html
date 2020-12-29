@@ -70,7 +70,7 @@
 														<span class="block input-icon input-icon-right">
 															<input id="input_un" name="username" type="text"
                                                                    class="form-control"
-                                                                   placeholder="Username"/>
+                                                                   placeholder="用户名"/>
 															<i class="ace-icon fa fa-user"></i>
 														</span>
                                             </label>
@@ -79,7 +79,7 @@
 														<span class="block input-icon input-icon-right">
 															<input id="input_pwd" name="pwd" type="password"
                                                                    class="form-control"
-                                                                   placeholder="Password"/>
+                                                                   placeholder="用户密码"/>
 															<i class="ace-icon fa fa-lock"></i>
 														</span>
                                             </label>
@@ -89,7 +89,7 @@
                                             <div class="clearfix">
                                                 <label class="inline">
                                                     <input type="checkbox" class="ace"/>
-                                                    <span class="lbl"> 记住密码</span>
+                                                    <span class="lbl">记住密码</span>
                                                 </label>
 
                                                 <button id="logbut" type="submit"
@@ -110,16 +110,19 @@
                                     <div class="space-6"></div>
 
                                     <div class="social-login center">
-                                        <a class="btn btn-primary" href="">
-
+                                        <a href="/qq_login">
+                                            <img src="../static/img/left.png" style="height: 56px;width:
+                                            56px;border-radius: 28px;position:relative;left: -20px;"title="QQ登录" />
                                         </a>
 
-                                        <a class="btn btn-info">
-
+                                        <a href="/email">
+                                            <img src="../static/img/TV.jpg" style="height: 56px;width:
+                                            56px;border-radius: 28px;position:relative;left: -10px;"title="QQ邮箱登录" />
                                         </a>
 
-                                        <a class="btn btn-danger" href="">
-
+                                        <a href="/login_sms">
+                                            <img src="../static/img/right.png" style="height: 56px;width:
+                                            56px;border-radius: 28px;" title="手机号登录"/>
                                         </a>
                                     </div>
                                 </div><!-- /.widget-main -->
@@ -152,23 +155,23 @@
 
                                     <div class="space-6"></div>
                                     <p>
-                                        请输入你的账号
+                                        请输入你的手机号
                                     </p>
 
-                                    <form>
+                                    <form action="/retrieve_pwd" method="get">
                                         <fieldset>
                                             <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="email" class="form-control"
-                                                                   placeholder="Email"/>
+															<input type="text" class="form-control"
+                                                                   placeholder="手机号"/>
 															<i class="ace-icon fa fa-envelope"></i>
 														</span>
                                             </label>
 
                                             <div class="clearfix">
-                                                <button type="button" class="width-35 pull-right btn btn-sm btn-danger">
+                                                <button type="submit" class="width-35 pull-right btn btn-sm btn-danger">
                                                     <i class="ace-icon fa fa-lightbulb-o"></i>
-                                                    <span class="bigger-110">Send Me!</span>
+                                                    <span class="bigger-110">找回密码</span>
                                                 </button>
                                             </div>
                                         </fieldset>
@@ -223,7 +226,7 @@
                                             <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
 															<input type="password" name="rpwd" class="form-control"
-                                                                   placeholder="再输出一次密码"/>
+                                                                   placeholder="再输入一次密码"/>
 															<i class="ace-icon fa fa-retweet"></i>
 														</span>
                                             </label>

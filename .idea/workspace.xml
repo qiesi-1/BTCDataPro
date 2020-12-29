@@ -1,7 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f16cb342-79c2-4ee9-9fc8-8e5a98de863b" name="Default Changelist" comment="" />
+    <list default="true" id="f16cb342-79c2-4ee9-9fc8-8e5a98de863b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/emaillogin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/emaillogin_second.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/qqlogin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/retrievepwd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/emailLogin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/forget.e401bbd1fea1538b89b745fab4b87467.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/main-badf30a70c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/TV.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/ac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/ac1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/app-code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/app-download-qrcode-9cd6a29b52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/app-word.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/closeicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/default-ba46adfe70.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/default_adver163.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/email2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/erweima.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/gonganlogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/jy1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/jy2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/jy3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/logo-home-5f0c893d9d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/logo_footer-afd80b6c40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/resupload_2020_6_8_39628e5a6146f059949210bebf88d697.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/return_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/talk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/analytics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/collect.2.2.11.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/common-a2ef174cf2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/footer-faf25875ec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/headerSearch-e7c17177a4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/login-b1457056d1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/nologinTopFixed-afadaa81e2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/pc_slide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/pc_text.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/seed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/vendor-75d50e297f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/loginemail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/loginemail_second.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/loginsms_second.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/retrieve_pwd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/login.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/sendSmsController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/sendSmsController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/smsLogin.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/smsLogin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/smsRecord.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/smsRecord.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/block1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/block2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/qrcode.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/qrcode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sendSms.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sendSms.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/loginsms.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/loginsms.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,35 +81,65 @@
     </option>
   </component>
   <component name="GOROOT" path="E:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1loNizL23JLBex1QWggFTYS2TmN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Datarenzheng1010" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\GoProjects\src\BTCDataPro\views" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GoProjects\src\BTCDataPro\static\css" />
+      <recent name="E:\GoProjects\src\BTCDataPro\static\img" />
+      <recent name="E:\GoProjects\src\BTCDataPro\static\js" />
       <recent name="E:\GoProjects\src\BTCDataPro\views" />
-      <recent name="E:\GoProjects\src\BTCDataPro\static\css\uncompressed" />
+      <recent name="E:\GoProjects\src\BTCDataPro\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GoProjects\src\BTCDataPro\static\img" />
+      <recent name="E:\GoProjects\src\BTCDataPro\views" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build BTCDataPro">
+    <configuration name="go build BTCDataPro (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="BTCDataPro" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/yesy.go" />
+      <package value="BTCDataPro" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build BTCDataPro (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="BTCDataPro" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/test'.go" />
+      <package value="BTCDataPro" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build BTCDataPro" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="BTCDataPro" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
+      <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/main.go" />
       <package value="BTCDataPro" />
       <method v="2" />
@@ -52,36 +147,53 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build BTCDataPro" />
+        <item itemvalue="Go Build.go build BTCDataPro (2)" />
+        <item itemvalue="Go Build.go build BTCDataPro (1)" />
       </list>
     </recent_temporary>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="56" key="#go_build_BTCDataPro" timestamp="1608259654573">
+    <state x="488" y="56" key="#go_build_BTCDataPro" timestamp="1608794549572">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="488" y="56" key="#go_build_BTCDataPro/0.0.1536.824@0.0.1536.824" timestamp="1608259654573" />
-    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1608634829531">
+    <state x="488" y="56" key="#go_build_BTCDataPro/0.0.1536.824@0.0.1536.824" timestamp="1608794549572" />
+    <state x="477" y="47" key="#go_build_BTCDataPro_(1)" timestamp="1608794570024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608634829531" />
-    <state width="1034" height="198" key="GridCell.Tab.0.bottom" timestamp="1608643262396">
+    <state x="477" y="47" key="#go_build_BTCDataPro_(1)/0.0.1536.824@0.0.1536.824" timestamp="1608794570024" />
+    <state x="477" y="47" key="#go_build_BTCDataPro_(2)" timestamp="1608807377522">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1034" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608643262396" />
-    <state width="1034" height="198" key="GridCell.Tab.0.center" timestamp="1608643262396">
+    <state x="477" y="47" key="#go_build_BTCDataPro_(2)/0.0.1536.824@0.0.1536.824" timestamp="1608807377522" />
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1609151759660">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1034" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608643262396" />
-    <state width="1034" height="198" key="GridCell.Tab.0.left" timestamp="1608643262396">
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609151759660" />
+    <state width="1493" height="244" key="GridCell.Tab.0.bottom" timestamp="1609206803497">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1034" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608643262396" />
-    <state width="1034" height="198" key="GridCell.Tab.0.right" timestamp="1608643262396">
+    <state width="1493" height="244" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609206803497" />
+    <state width="1493" height="244" key="GridCell.Tab.0.center" timestamp="1609206803497">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1034" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608643262396" />
+    <state width="1493" height="244" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609206803497" />
+    <state width="1493" height="244" key="GridCell.Tab.0.left" timestamp="1609206803497">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="244" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609206803497" />
+    <state width="1493" height="244" key="GridCell.Tab.0.right" timestamp="1609206803497">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="244" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609206803497" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608779668654">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608779668654" />
   </component>
 </project>

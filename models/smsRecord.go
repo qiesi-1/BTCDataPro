@@ -26,9 +26,9 @@ func (s SmsRecord) SaveSmsRecord()(int64,error){
 }
 
 //根据用户提交的手机号和短信验证码查询验证码是否正确
-func QuerySmsRecord(bizId string,phone string,code string)(*SmsRecord,error){
+func QuerySmsRecord(phone string,code string)(*SmsRecord,error){
 	var sms SmsRecord
-	row := db_mysql.Db.QueryRow("select biz_id,timestamp from sms_record where biz_id = ? and phone = ? and code = ?",bizId,phone,code)
+	row := db_mysql.Db.QueryRow("select biz_id,timestamp from sms_record where  phone = ? and code = ?",phone,code)
 	err := row.Scan(&sms.BizId,&sms.TimeStamp)
 	if err != nil {
 		return nil,err
