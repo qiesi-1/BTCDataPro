@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#top_div {
+				
+			}
+			
+			.bodydiv {
+				width: 50%;
+				height: 300px;
+				position: relative;
+				left: 25%;
+				background-color: blue;
+			}
+			
+			.kiseLw {
+				display: flex;
+				flex-direction: row;
+				-webkit-box-pack: start;
+				justify-content: flex-start;
+				-webkit-box-align: center;
+				align-items: center;
+				width: 100%;
+				border-bottom: 1px solid rgb(223, 227, 235);
+				font-size: 100%;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				text-rendering: optimizeLegibility;
+				
+			}
+			
+			#left {
+				width: 40%;
+				background-color: palegreen;
+				display: inline-block;
+				margin-left: 5%;
+				margin-top:10px ;
+			}
+			
+			#right {
+				width: 40%;
+				background-color: rosybrown;
+				display: inline-block;
+				margin-top:10px ;
+			}
+			#ye{
+				margin-left: 30%;
+				margin-top: 30px;
+				width: 200px;
+				height: 30px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="top_div">
+			<img src="../static/img/email2.png" width="200px" height="75px" />
+
+		</div>
+		<div class="bodydiv" style="background-color: darkslategrey;">
+			<input type="text" name="ye" id="ye" placeholder="请输入参数" width="10px"/>
+			<button type="button" style="height: 30px;">查询</button>
+		</div>
+		<div class="bodydiv">
+			<div class=".kiseLw">
+				<div id="left">
+					12
+				</div>
+				<div id="right">
+					12
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

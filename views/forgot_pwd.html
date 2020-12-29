@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://passport.csdn.net/forget -->
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>忘记密码</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/forget.e401bbd1fea1538b89b745fab4b87467.css">
+		<style type="text/css">
+			input::-webkit-input-placeholder{
+				color: cornflowerblue;
+			}
+		</style>
+	</head>
+
+	<body style="background-image: url(../static/img/bg1.png);background-attachment:fixed;background-repeat: no-repeat;background-size: cover;">
+		<div id="app">
+			<div class="container-main container-pc">
+				<div class="header-info">
+					<div class="info-pc" style="position: fixed;left: 10px;top: 200px;">
+						
+					</div>
+				</div>
+				<div class="main-content">
+					<div class="main-logo info-pc">
+						&nbsp;
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+					</div>
+					<div class="step">
+						<form action="">
+							<div rol="form" class="form-layout form-horizontal form-coustom">
+								<div class="form-group info-pc">
+									<div class="col-sm-12 info-subtitle">
+										<p style="font-size: 20px;color: white;">返回登录</p>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-xs-5 col-sm-5">
+										<div class="select-list dropdown-select"><span data-toggle="dropdown" data-target="drop-new-menus" data-value="86" class="dropdown-text" unselectable="on">86</span></div>
+									</div>
+									<div class="col-xs-7 col-sm-7 control-col-pos form-control-phone">
+										<input type="text" placeholder="手机号" id="phone" name="phone" validate="true" data-rule="[&#39;enPhone&#39;]" autocomplete="off" class="form-control form-control-icon">
+										<input type="hide" name="cnPhone" autocomplete="cnPhone" style="opacity: 0; height: 0px; position: absolute;">
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-12 control-col-pos drop-wrap">
+									<div class="select-list dropdown-select control-col-absos">
+										<ul id="drop-new-menus" class="dropdown-list dropdown-menus">
+											<li data-text="86"><span data-text="86">+ 86</span> <em data-text="86">中国</em></li>
+											<select>
+
+											</select>
+										</ul>
+									</div>
+								</div>
+								<div class="form-group hide">
+									<div class="col-xs-12 col-sm-12 control-col-pos">
+										<input type="text" placeholder="邮箱" id="email" name="email" validate="true" data-rule="[&#39;email&#39;]" autocomplete="off" class="form-control form-control-icon">
+										<label for="icon-close" class="icon-remove  icon-control js_icon hide">×</label>
+										<input type="hide" name="email" autocomplete="email" style="opacity: 0; height: 0px; position: absolute;">
+										<div class="control-col-pos control-email">
+											<ul class="email-list hide"></ul>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-xs-12 col-sm-12 control-col-pos">
+										<input type="text" placeholder="6位数字验证码" id="code" name="code" validate="true" data-rule="[&#39;code&#39;]" autocomplete="off" class="form-control form-control-code">
+										<button class="btn btn-confirm btn-control" type="submit">获取验证码</button>
+										<input type="hide" name="code" autocomplete="code" style="opacity: 0; height: 0px; position: absolute;">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-xs-12 col-sm-12 control-col-pos">
+										<input type="password" name="password" id="password" validate="true" data-rule="[&#39;password&#39;]" class="form-control-pwd">
+										<input type="password" placeholder="新密码为11-20位数字字母组合" name="pwd" id="password-number" autocomplete="off" class="form-control form-control-icon">
+										<input type="hide" name="pwd" autocomplete="pwd" style="opacity: 0; height: 0px; position: absolute;">
+									</div>
+								</div>
+								<div class="form-group hide">
+									<div class="col-sm-12 control-col-pos">
+										<input type="text" name="user" placeholder="用户名" id="user" validate="true" data-rule="[&#39;user&#39;]" autocomplete="off" class="form-control form-control-icon">
+										<label for="icon-close" class="icon-remove  icon-control js_icon hide">×</label>
+										<input type="hide" name="user" autocomplete="user" style="opacity: 0; height: 0px; position: absolute;">
+									</div>
+								</div>
+								<!---->
+								<div class="form-group form-group-error">
+									<svg aria-hidden="true" class="icon info-mobile info-mobile-icon">
+										<use xlink:href="#csdnc-info"></use>
+									</svg>
+									<div id="js_err_dom" class="col-xs-12 col-sm-12 text-error hide"></div>
+								</div>
+								<!--返回登录页面-->
+								<div >
+									<a href="/login"style="text-decoration:none;">
+										<p style="font-size: 15px;line-height: 15px;color: lightgoldenrodyellow;">返回登录页面</p>
+									</a>
+								</div>
+								<div class="form-group">
+									<div class="form-submit col-xs-12 col-sm-12">
+										<button disabled="disabled" data-type="phone" class="btn btn-primary__disabled btn-primary-disabled">下一步</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
