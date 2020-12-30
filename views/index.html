@@ -4,16 +4,57 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<link href="../stptic/css/c5.css" />
 		<style>
-			#right-windows {
-				margin-left: auto;
-				padding-top: auto;
-				width: 120px;
-				height: 100px;
-				background-color: red;
+		*{margin: 0px;}
+			#top_div {
+				
+				background-color: white;
 			}
-			 
+			
+			.bodydiv {
+				width: 50%;
+				height: 300px;
+				position: relative;
+				left: 25%;
+				background-color: blue;
+			}
+			
+			.kiseLw {
+				display: flex;
+				flex-direction: row;
+				-webkit-box-pack: start;
+				justify-content: flex-start;
+				-webkit-box-align: center;
+				align-items: center;
+				width: 100%;
+				border-bottom: 1px solid rgb(223, 227, 235);
+				font-size: 100%;
+				font-style: normal;
+				-webkit-font-smoothing: antialiased;
+				text-rendering: optimizeLegibility;
+			}
+			
+			#left {
+				
+				display: inline-block;
+				margin-top: 10px;
+				width: 200px;
+			}
+			
+			#right {
+				background-color: rosybrown;
+				display: inline-block;
+				margin-top: 10px;
+				width: 200px;
+			}
+			
+			#ye {
+				margin-top: 30px;
+				width: 200px;
+				height: 30px;
+			}
+			
+			
 			#npvsecond {
 				width: 200px;
 				background-color: yellow;
@@ -21,9 +62,8 @@
 			
 			li {
 				display: list-item;
-				text-align:inherit;
+				text-align: inherit;
 				list-style: none;
-				
 			}
 			
 			div#npvsecond {
@@ -33,7 +73,7 @@
 				border: 0;
 				width: 300px;
 				background: transparent;
-				background-color: pink;
+				
 			}
 			
 			div#npvsecond li.currentLink p:link,
@@ -68,34 +108,22 @@
 				width: 100px;
 				line-height: 5px;
 				border: none;
-				background-color: pink;
+				
 			}
 			
 			#indexheader {
 				float: left;
 				width: 100%;
 				height: 50px;
-				/*background-color: blueviolet;*/
 			}
-			p{
+			
+			p {
 				font-size: 10px;
 			}
 		</style>
 
 		<script src="../static/js/jquery-3.1.1.js"></script>
 		<!--点击button div消失或显现-->
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$("#ul_1").hidden(0)
-			})
-		</script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$("button").click(function() {
-					$("#right-windows").toggle(1000);
-				});
-			});
-		</script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$("#h2_1").click(function() {
@@ -119,12 +147,9 @@
 		</script>
 	</head>
 
-	<body>
-		<div id="indexheader">
-			<div>
-				<h2 style="line-height: 5px;display: inline-block;">区块链四班C组</h2>
-				<h2 style="line-height: 5px; float: right;padding-right: 20px;display: inline-block;"></h2>
-			</div>
+	<body style="background-image: url(../static/img/btc1.jpg);background-attachment:fixed;background-repeat: no-repeat;background-size: cover;">
+		<div id="top_div">
+			<img src="../static/img/email2.png" width="200px" height="75px" style="display: inline-block;"/>
 		</div>
 		<div>
 			<div id="npvsecond">
@@ -133,7 +158,7 @@
 					<ul id="ul_1">
 						<li>
 							<button id="">
-								<p>获取区块数量</p>
+								<p>获取区块总数</p>
 							</button>
 						</li>
 						<li>
@@ -142,70 +167,91 @@
 							</button>
 						</li>
 						<li>
-							<p>获取比特币新地址</p>
+							<button id="">
+								<p>获取所有命令</p>
+							</button>
 						</li>
 						<li>
-							<p></p>
+							<button id="">
+								<p>获取比特币新地址</p>
+							</button>
 						</li>
 						<li>
-							<p>获取比特币新地址</p>
-						</li>
-						<li>
-							<p>获取比特币新地址</p>
+							<button id="">
+								<p>哈希值获取数据</p>
+							</button>
 						</li>
 					</ul>
 					<h2 id="h2_2">地址指令</h2>
 					<ul id="ul_2">
 						<li>
-							<p>获取比特币新地址</p>
+							<button id="">
+								<p>最新区块哈希</p>
+							</button>
 						</li>
 						<li>
-							<p>获取比特币新地址</p>
+							<button id="">
+								<p>当前区块难度</p>
+							</button>
 						</li>
 						<li>
-							<p>获取比特币新地址</p>
+							<button id="">
+								<p>通过哈希获取数据</p>
+							</button>
 						</li>
 						<li>
-							<p>获取比特币新地址</p>
+							<button id="">
+								<p>获取区块链信息</p>
+							</button>
 						</li>
 						<li>
-							<p>jQuery stop()</p>
+							<button id="">
+								<p>当前区块难度</p>
+							</button>
 						</li>
 						<li>
-							<p>j获取比特币新地址</p>
-						</li>
-						<li>
-							<p>获取比特币新地址</p>
+							<button id="">
+								<p>当前区块难度</p>
+							</button>
 						</li>
 					</ul>
 					<h2 id="h2_3">基础指令</h2>
 					<ul id="ul_3">
 						<li>
-							<p>获取比特币新地址</p>
+							<button id="">
+								<p>当前区块难度</p>
+							</button>
 						</li>
 						<li>
-							<p>获取比特币新地址</p>
+							<button id="">
+								<p>当前区块难度</p>
+							</button>
 						</li>
 						<li>
-							<p>获取比特币新地址</p>
+							<button id="">
+								<p>当前区块难度</p>
+							</button>
 						</li>
 						<li>
-							<p>获取比特币新地址</p>
+							<button id="">
+								<p>当前区块难度</p>
+							</button>
 						</li>
 						<li>
-							<p>获取比特币新地址</p>
-						</li>
-						<li>
-							<p>获取比特币新地址</p>
-						</li>
-						<li>
-							<p>获取比特币新地址</p>
+							<button id="">
+								<p>当前区块难度</p>
+							</button>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div id="right-windows">{..}</div>
+
 		</div>
+
+		
+			
+			
+	
 	</body>
 
 </html>
