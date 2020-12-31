@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12f32b99-5ea7-4402-8e87-f5d6b4a70c24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mysql/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/user.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
