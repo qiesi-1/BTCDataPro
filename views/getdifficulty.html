@@ -5,47 +5,45 @@
 		<meta charset="utf-8">
 		<title></title>
 		<style>
-		*{margin: 0px;}
 			#top_div {
-				
+				display: block;
 				background-color: white;
 			}
 			
+			*{
+				margin: 0px;
+			}
 			.bodydiv {
 				width: 50%;
 				height: 300px;
 				position: relative;
 				left: 25%;
-				background-color: blue;
 			}
 			
 			.kiseLw {
 				display: flex;
-				flex-direction: row;
 				-webkit-box-pack: start;
 				justify-content: flex-start;
 				-webkit-box-align: center;
 				align-items: center;
 				width: 100%;
-				border-bottom: 1px solid rgb(223, 227, 235);
 				font-size: 100%;
 				font-style: normal;
 				-webkit-font-smoothing: antialiased;
-				text-rendering: optimizeLegibility;
-			}
+				text-rendering: optimizeLegibility;			}
 			
 			#left {
-				
 				display: inline-block;
 				margin-top: 10px;
 				width: 200px;
+				background-color: beige;
 			}
 			
 			#right {
-				background-color: rosybrown;
 				display: inline-block;
 				margin-top: 10px;
 				width: 200px;
+				background-color: beige;
 			}
 			
 			#ye {
@@ -54,10 +52,16 @@
 				height: 30px;
 			}
 			
+			#right-windows {
+				margin-left: auto;
+				padding-top: auto;
+				width: 120px;
+				height: 100px;
+				
+			}
 			
 			#npvsecond {
 				width: 200px;
-				background-color: yellow;
 			}
 			
 			li {
@@ -73,7 +77,6 @@
 				border: 0;
 				width: 300px;
 				background: transparent;
-				
 			}
 			
 			div#npvsecond li.currentLink p:link,
@@ -120,7 +123,9 @@
 			a {
 				font-size: 10px;
 				text-decoration: none;
-				color: black;
+			}
+			.unknown{
+				color: blueviolet;
 			}
 		</style>
 
@@ -133,15 +138,42 @@
 				})
 			})
 		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#h2_2").click(function() {
+					$("#ul_2").toggle(200);
+				})
+			})
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#h2_3").click(function() {
+					$("#ul_3").toggle(200);
+				})
+			})
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("button").click(function(){
+					if($("#body").css('display')=='none'){
+						$("#body").css("display","block");
+					}else{
+						$("#body").css("display","none");
+					}
+				})
+			})
+		</script>
 	</head>
 
-	<body style="background-image: url(../static/img/bg4.jpg);background-attachment:fixed;background-repeat: no-repeat;background-size: cover;">
+		<body style="background-image: url(../static/img/bg3.jpg);background-attachment:fixed;background-repeat: no-repeat;background-size: cover;">
 		<div id="top_div">
-			<img src="../static/img/email2.png" width="200px" height="75px" style="display: inline-block;"/>
-			<div></div>
+			<img src="../static/img/email2.png" width="200px" height="75px" />
+			<div style="float: right;font-size: 20px;">
+				<a href="index.html" style="font-size: large;">返回主页</a>
+			</div>
 		</div>
 		<div>
-			<div id="npvsecond" style="opacity: 0.6;">
+			<div id="npvsecond" style="border: 1px solid darkgrey;display: inline-block;">
 				<div id="course">
 					<h2 id="h2_1">钱包指令</h2>
 					<ul id="ul_1">
@@ -165,6 +197,9 @@
 								<a href="getblock.html">哈希值获取数据</a>
 							</button>
 						</li>
+					</ul>
+					<h2 id="h2_2">地址指令</h2>
+					<ul id="ul_2">
 						<li>
 							<button id="">
 								<a href="getbestblockhash.html">最新区块哈希</a>
@@ -187,37 +222,40 @@
 						</li>
 						<li>
 							<button id="">
-								<a>当前区块难度</a>
+								<a href="">最新区块hash</a>
 							</button>
 						</li>
 						<li>
 							<button id="">
-								<a>当前区块难度</a>
+								<a href="">最新区块hash</a>
+							</button>
+						</li>
+					</ul>
+					<h2 id="h2_3">基础指令</h2>
+					<ul id="ul_3">
+						<li>
+							<button id="">
+								<a href="">最新区块hash</a>
 							</button>
 						</li>
 						<li>
 							<button id="">
-								<a>当前区块难度</a>
+								<a href="">最新区块hash</a>
 							</button>
 						</li>
 						<li>
 							<button id="">
-								<a>当前区块难度</a>
+								<a href="">最新区块hash</a>
 							</button>
 						</li>
 						<li>
 							<button id="">
-								<a>当前区块难度</a>
+								<a href="">最新区块hash</a>
 							</button>
 						</li>
 						<li>
 							<button id="">
-								<a>当前区块难度</a>
-							</button>
-						</li>
-						<li>
-							<button id="">
-								<a>当前区块难度</a>
+								<a href="">最新区块hash</a>
 							</button>
 						</li>
 					</ul>
@@ -226,9 +264,60 @@
 
 		</div>
 
-		
-			
-			
+		<div class="bodydiv" style="height: 100px;">
+			<input type="text" name="ye" id="ye" placeholder="请输入参数" width="10px" />
+			<button type="button" style="height: 30px;">查询</button>
+		</div>
+		<div class="bodydiv" id="body" style="position: fixed;top: 300px;left: 600px;display: none;">
+			<div class="kiseLw">
+				<div id="left" >
+					最新区块hash
+				</div>
+				<div id="right" >
+					<span class="unknown">Unknown</span>
+				</div>
+			</div>
+			<div class="kiseLw">
+				<div id="left" >
+					最新区块高度
+				</div>
+				<div id="right" >
+					<span class="unknown">Unknown</span>
+				</div>
+			</div>
+			<div class="kiseLw">
+				<div id="left" >
+					挖矿难度
+				</div>
+				<div id="right" >
+					<span>{{.}}</span>
+				</div>
+			</div>
+			<div class="kiseLw">
+				<div id="left" >
+					区块大小
+				</div>
+				<div id="right" >
+					<span class="unknown">Unknown</span>
+				</div>
+			</div>
+			<div class="kiseLw">
+				<div id="left" >
+					区块总数
+				</div>
+				<div id="right" >
+					<span class="unknown">Unknown</span>
+				</div>
+			</div>
+			<div class="kiseLw">
+				<div id="left" >
+					chain
+				</div>
+				<div id="right" >
+					<span class="unknown">Unknown</span>
+				</div>
+			</div>
+		</div>
 	
 	</body>
 

@@ -6,11 +6,11 @@ import (
 )
 
 type Users struct {
-	Id   int    `form:"id"`
+	Id       int    `form:"id"`
 	UserName string `form:"username"`
-	Pwd  string `form:"pwd"`
-	Rpwd string `form:"rpwd"`
-	Phone string `form:"phone"`
+	Pwd      string `form:"pwd"`
+	Rpwd     string `form:"rpwd"`
+	Phone    string `form:"phone"`
 }
 
 //保存用户注册数据

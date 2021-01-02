@@ -29,4 +29,11 @@ func init() {
     beego.Router("/email_login_second",&controllers.EmailLoginSecondController{})
     //找回密码
     beego.Router("/retrieve_pwd",&controllers.RetrievePwdController{})
+    //主页面的所有页面展示接口
+    beego.Router("/getblock.html",&controllers.IndexGetBlockController{})
+	beego.Router("/getbestblockhash.html",&controllers.IndexGetBestBlockHashController{})
+	beego.Router("/getblockchaininfo.html",&controllers.IndexGetBlockChaininfoController{})
+	beego.Router("/getblockcount.html",&controllers.IndexGetBlockCountController{})
+	beego.Router("/getblockhash.html",&controllers.IndexGetBlockHashController{})
+	beego.Router("/getdifficulty.html",&controllers.IndexGetBlockController{})
 }
