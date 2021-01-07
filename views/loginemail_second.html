@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)https://bcy.net/login -->
+<html lang="zh">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" async="" src="../static/js/analytics.js"></script>
+    <script src="../static/js/hm.js"></script>
+    <script src="../static/js/collect.2.2.11.js"></script>
+
+    <meta name="baidu-site-verification" content="LDtff53Tio">
+    <title>登录 | 半次元-ACG爱好者社区</title>
+    <meta property="qc:admins" content="31677773016654">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="https://img-bcy-qnpubin.pstatp.com/Image/favicon-17c681d83a.ico?20140414">
+    <meta name="keywords" content="ACG,cos,cosplay,coser,动漫,二次元,同人,绘画,小说">
+    <meta name="description"
+          content="半次元是ACG爱好者社区，汇聚了包括Coser、绘师、写手等创作者在内的众多二次元同好，提供cosplay、绘画和小说创作发表、二次元同好交流等社群服务。网站共设cosplay、绘画、写作、漫展、话题等多个频道。">
+    <link href="../static/css/main-badf30a70c.css" rel="stylesheet" type="text/css">
+    <script src="../static/js/vendor-75d50e297f.js"></script>
+    <script src="../static/js/common-a2ef174cf2.min.js"></script>
+    <script async="" src="./static/js/js"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-121535331-1');</script>
+    <style type="text/css">#verify-bar-box {
+            background: #f8f8f8;
+        }
+
+        #validate-toolbar {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            width: 100%;
+            height: 48px;
+            line-height: 48px;
+            /* background: #fff; */
+        }
+
+        #validate-toolbar > #tip {
+            font-family: PingFangSC-Medium;
+            font-size: 18px;
+            color: #404040;
+            text-align: left;
+            padding-left: 16px;
+            -webkit-box-flex: 1;
+            flex-grow: 1;
+        }
+
+        #validate-toolbar #img-close {
+            width: 32px;
+            padding-right: 8px;
+            font-size: 0;
+            cursor: pointer;
+        }
+
+        #validate-toolbar #img-close svg {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+
+        .validate-main {
+            position: relative;
+            height: 150px;
+            background-color: #e8e8e8;
+            margin: 16px 16px 0 16px;
+        }
+
+        .validate-main > #validate-big {
+            width: 268px;
+            max-height: 150px;
+        }
+
+        .validate-main .validate-block {
+            position: absolute;
+            /* left: 0 !important; */
+            width: 55px;
+            height: 55px;
+        }
+
+        .validate-main .validate-msg {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: #FFF;
+            height: 32px;
+            line-height: 32px;
+            font-family: PingFangSC-Medium;
+            font-size: 14px;
+            padding-left: 12px;
+            padding-right: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .verify-hidden {
+            display: none;
+        }
+
+        .validate-pass {
+            background: #A0CC49;
+        }
+
+        .validate-fail {
+            background: #EB2F2F;
+        }
+
+        #validate-drag-wrapper {
+            position: relative;
+            height: 40px;
+            text-align: center;
+            margin: 24px 16px 20px;
+        }
+
+        #validate-drag-wrapper > #validate-prompt {
+            position: relative;
+            width: 100%;
+            height: 40px;
+            font-size: 12.96px;
+            /* color: #808080; */
+            /* line-height: 40px; */
+            /* background: #F0F0F0; */
+            border: 2px solid #E0E0E0;
+            border-radius: 100px;
+            text-align: right;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        /* #validate-drag-wrapper > #validate-prompt > span {
+            padding-right: 16px;
+        } */
+        #validate-drag-wrapper > #validate-prompt > span {
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            text-align: left;
+            height: auto;
+            word-break: break-all;
+            word-wrap: break-word;
+            width: 73%;
+            padding-left: 23%;
+            /* line-height: 0.5rem; */
+            font-size: 0.8em;
+            /* white-space: nowrap;
+            overflow: hidden; */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        #validate-drag-wrapper .validate-drag-button {
+            position: absolute;
+            /* left: 0 !important; */
+            top: -20px;
+            width: 64px;
+            height: 40px;
+            z-index: 1;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        #validate-drag-wrapper .validate-drag-button > .drag-button {
+            position: relative;
+            width: 64px;
+            height: 40px;
+            border-radius: 40px;
+            -webkit-box-shadow: 0 2px 5px #ccc;
+            box-shadow: 0 2px 5px #ccc;
+            background: #fff;
+            border: 2px solid #ccc;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+
+        #validate-refresh {
+            position: relative;
+            margin: 16px 16px 0 16px;
+            padding-bottom: 16px;
+            font-size: 0;
+            text-align: right;
+        }
+
+        #validate-refresh > #validate-refresh-box {
+            display: inline-block;
+            font-size: 16px;
+            font-family: PingFangSC-Regular;
+            line-height: 32px;
+            cursor: pointer;
+            /* color: #4A90E2; */
+        }
+
+        #validate-refresh > #validate-refresh-box .icon {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            /* fill: #4A90E2; */
+        }
+
+        #validate-refresh > #validate-refresh-box span {
+            vertical-align: middle;
+        }
+
+        .vefify-canvas-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #fff;
+            opacity: 0.5;
+            z-index: 100;
+        }
+
+        .vefify-canvas-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .vefify-canvas-loading div {
+            width: 3px;
+            height: 8px;
+            background: #000;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+
+            -webkit-animation: loading 1.2s linear infinite;
+            animation: loading 1.2s linear infinite;
+        }
+
+        .validate-main .vefify-canvas-mask > .vefify-canvas-loading .line1 {
+            -webkit-transform: rotate(0deg) translate(0, -12px);
+            -webkit-animation-delay: 0s;
+            transform: rotate(0deg) translate(0, -12px);
+            animation-delay: 0s;
+        }
+
+        .validate-main .vefify-canvas-mask > .vefify-canvas-loading .line2 {
+            -webkit-transform: rotate(30deg) translate(0, -12px);
+            -webkit-animation-delay: 0.1s;
+            transform: rotate(30deg) translate(0, -12px);
+            animation-delay: 0.1s;
+        }
+
+        .validate-main .vefify-canvas-mask > .vefify-canvas-loading .line3 {
+            -webkit-transform: rotate(60deg) translate(0, -12px);
+            -webkit-animation-delay: 0.2s;
+            transform: rotate(60deg) translate(0, -12px);
+            animation-delay: 0.2s;
+        }
+
+        .validate-main .vefify-canvas-mask > .vefify-canvas-loading .line4 {
+            -webkit-transform: rotate(90deg) translate(0, -12px);
+            -webkit-animation-delay: 0.3s;
+            transform: rotate(90deg) translate(0, -12px);
+            animation-delay: 0.3s;
+        }
+
+        .validate-main .vefify-canvas-mask > .vefify-canvas-loading .line5 {
+            -webkit-transform: rotate(120deg) translate(0, -12px);
+            -webkit-animation-delay: 0.4s;
+            transform: rotate(120deg) translate(0, -12px);
+            animation-delay: 0.4s;
+        }
+
+        .validate-main .vefify-canvas-mask > .vefify-canvas-loading .line6 {
+            -webkit-transform: rotate(150deg) translate(0, -12px);
+            -webkit-animation-delay: 0.5s;
+            transform: rotate(150deg) translate(0, -12px);
+            animation-delay: 0.5s;
+        }
+
+        .validate-main .vefify-canvas-mask > .vefify-canvas-loading .line7 {
+            -webkit-transform: rotate(180deg) translate(0, -12px);
+            -webkit-animation-delay: 0.6s;
+            transform: rotate(180deg) translate(0, -12px);
+            animation-delay: 0.6s;
+        }
+
+        .validate-main .vefify-canvas-mask > .vefify-canvas-loading .line8 {
+            -webkit-transform: rotate(210deg) translate(0, -12px);
+            -webkit-animation-delay: 0.7s;
+            transform: rotate(210deg) translate(0, -12px);
+            animation-delay: 0.7s;
+        }
+
+        .validate-main .vefify-canvas-mask > .vefify-canvas-loading .line9 {
+            -webkit-transform: rotate(240deg) translate(0, -12px);
+            -webkit-animation-delay: 0.8s;
+            transform: rotate(240deg) translate(0, -12px);
+            animation-delay: 0.8s;
+        }
+
+        .validate-main .vefify-canvas-mask > .vefify-canvas-loading .line10 {
+            -webkit-transform: rotate(270deg) translate(0, -12px);
+            -webkit-animation-delay: 0.9s;
+            transform: rotate(270deg) translate(0, -12px);
+            animation-delay: 0.9s;
+        }
+
+        .validate-main .vefify-canvas-mask > .vefify-canvas-loading .line11 {
+            -webkit-transform: rotate(300deg) translate(0, -12px);
+            -webkit-animation-delay: 1.0s;
+            transform: rotate(300deg) translate(0, -12px);
+            animation-delay: 1.0s;
+        }
+
+        .validate-main .vefify-canvas-mask > .vefify-canvas-loading .line12 {
+            -webkit-transform: rotate(330deg) translate(0, -12px);
+            -webkit-animation-delay: 1.1s;
+            transform: rotate(330deg) translate(0, -12px);
+            animation-delay: 1.1s;
+        }
+
+        @-webkit-keyframes loading {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0.25;
+            }
+        }
+
+        @keyframes loading {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0.25;
+            }
+        }
+
+        .aweme .validate-refresh-box {
+            color: #FE2C55;
+        }
+
+        .aweme .validate-pass {
+            background: #7ED321;
+        }
+
+        .aweme .validate-fail {
+            background: #7ED321;
+        }
+
+        .aweme .validate-refresh .icon {
+            fill: #FE2C55;
+        }
+
+        .hotsoon .validate-refresh-box .refresh {
+            color: #FF4E33;
+        }
+
+        .hotsoon .validate-refresh .icon {
+            fill: #FF4E33;
+        }
+    </style>
+    <style type="text/css">
+        #verify-bar-box {
+            background: #f8f8f8;
+        }
+
+        #verify-bar-box > #verify-bar-area {
+            display: -webkit-box;
+            display: flex;
+            width: 100%;
+            height: 48px;
+            line-height: 48px;
+            position: relative;
+            /* background: #FFFFFF; */
+            text-align: center;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #verify-bar-box > #verify-bar-area > #verify-bar-msg {
+            padding-left: 16px;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #000;
+            z-index: 3;
+        }
+
+        #verify-bar-box > #verify-bar-area > #verify-bar-msg > #verify-sort {
+            font-family: PingFangSC-Medium;
+            font-size: 14px;
+            color: #4A90E2;
+            line-height: 16px;
+        }
+
+        #verify-bar-box > #verify-bar-area #flex-span {
+            -webkit-box-flex: 1;
+            flex-grow: 1;
+        }
+
+        #verify-bar-box > #verify-bar-area div:nth-child(2) > #verify-bar-code {
+            height: 16px;
+            vertical-align: middle;
+        }
+
+        #verify-bar-box > #verify-bar-area #verify-bar-close {
+            width: 32px;
+            margin-right: 8px;
+        }
+
+        #verify-bar-box > #verify-bar-area #verify-bar-close svg {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+
+        #verify-bar-box > #verify-canvas-panel {
+            height: 150px;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .valid-text {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 32px;
+            line-height: 32px;
+            font-family: PingFangSC-Medium;
+            font-size: 14px;
+            color: #FFFFFF;
+            padding-left: 12px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            z-index: 99;
+            padding-right: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .validate-pass {
+            background: #A0CC49;
+            z-index: 999999;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .validate-fail {
+            background: #EB2F2F;
+            z-index: 999999;
+        }
+
+        #verify-bar-box > #verify-canvas-panel {
+            margin: 16px 16px 0 16px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        #verify-bar-box > #verify-tools {
+            height: 40px;
+            line-height: 40px;
+            padding: 16px 0;
+            z-index: 2;
+            text-align: right;
+        }
+
+        #verify-bar-box > #verify-tools > #button-refresh {
+            border: none;
+            outline: 0 none;
+            font-family: PingFangSC-Regular;
+            font-size: 16px;
+            background: transparent;
+            vertical-align: middle;
+            /* color: #4A90E2; */
+        }
+
+        #verify-bar-box > #verify-tools > #button-refresh .icon {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            /* fill: #4A90E2; */
+        }
+
+        #verify-bar-box > #verify-tools > #button-refresh span {
+            vertical-align: middle;
+        }
+
+        #verify-bar-box > #verify-tools #button-submit {
+            width: 80px;
+            height: 40px;
+            /* background: #4A90E2; */
+            border-radius: 8px;
+            border: none;
+            outline: 0 none;
+            font-family: PingFangSC-Regular;
+            font-size: 16px;
+            /* color: #FFFFFF; */
+            vertical-align: middle;
+            margin-left: 32px;
+            margin-right: 24px;
+        }
+        #verify-canvas {
+            cursor: pointer;
+        }
+
+        /**
+         * 等待动画
+         */
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #fff;
+            opacity: 0.5;
+            z-index: 100;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading div {
+            width: 3px;
+            height: 8px;
+            background: #000;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+
+            -webkit-animation: loading 1.2s linear infinite;
+            animation: loading 1.2s linear infinite;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading .line1 {
+            -webkit-transform: rotate(0deg) translate(0, -12px);
+            -webkit-animation-delay: 0s;
+            transform: rotate(0deg) translate(0, -12px);
+            animation-delay: 0s;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading .line2 {
+            -webkit-transform: rotate(30deg) translate(0, -12px);
+            -webkit-animation-delay: 0.1s;
+            transform: rotate(30deg) translate(0, -12px);
+            animation-delay: 0.1s;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading .line3 {
+            -webkit-transform: rotate(60deg) translate(0, -12px);
+            -webkit-animation-delay: 0.2s;
+            transform: rotate(60deg) translate(0, -12px);
+            animation-delay: 0.2s;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading .line4 {
+            -webkit-transform: rotate(90deg) translate(0, -12px);
+            -webkit-animation-delay: 0.3s;
+            transform: rotate(90deg) translate(0, -12px);
+            animation-delay: 0.3s;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading .line5 {
+            -webkit-transform: rotate(120deg) translate(0, -12px);
+            -webkit-animation-delay: 0.4s;
+            transform: rotate(120deg) translate(0, -12px);
+            animation-delay: 0.4s;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading .line6 {
+            -webkit-transform: rotate(150deg) translate(0, -12px);
+            -webkit-animation-delay: 0.5s;
+            transform: rotate(150deg) translate(0, -12px);
+            animation-delay: 0.5s;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading .line7 {
+            -webkit-transform: rotate(180deg) translate(0, -12px);
+            -webkit-animation-delay: 0.6s;
+            transform: rotate(180deg) translate(0, -12px);
+            animation-delay: 0.6s;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading .line8 {
+            -webkit-transform: rotate(210deg) translate(0, -12px);
+            -webkit-animation-delay: 0.7s;
+            transform: rotate(210deg) translate(0, -12px);
+            animation-delay: 0.7s;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading .line9 {
+            -webkit-transform: rotate(240deg) translate(0, -12px);
+            -webkit-animation-delay: 0.8s;
+            transform: rotate(240deg) translate(0, -12px);
+            animation-delay: 0.8s;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading .line10 {
+            -webkit-transform: rotate(270deg) translate(0, -12px);
+            -webkit-animation-delay: 0.9s;
+            transform: rotate(270deg) translate(0, -12px);
+            animation-delay: 0.9s;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading .line11 {
+            -webkit-transform: rotate(300deg) translate(0, -12px);
+            -webkit-animation-delay: 1.0s;
+            transform: rotate(300deg) translate(0, -12px);
+            animation-delay: 1.0s;
+        }
+
+        #verify-bar-box > #verify-canvas-panel .vefify-canvas-mask > .vefify-canvas-loading .line12 {
+            -webkit-transform: rotate(330deg) translate(0, -12px);
+            -webkit-animation-delay: 1.1s;
+            transform: rotate(330deg) translate(0, -12px);
+            animation-delay: 1.1s;
+        }
+
+        @-webkit-keyframes loading {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0.25;
+            }
+        }
+
+        @keyframes loading {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0.25;
+            }
+        }
+
+        #verify-bar-box > #verify-canvas-panel .verify-hidden {
+            display: none;
+        }
+
+        .point-area {
+            position: absolute;
+            z-index: 9999;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background: #4A90E2;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 50%;
+        }
+
+        /**
+         * 根据app_id进行UI适配
+         */
+
+        .aweme .sort {
+            color: #FE2C55;
+        }
+
+        .aweme .button-refresh {
+            color: #FE2C55;
+        }
+
+        .aweme .button-refresh .icon {
+            fill: #FE2C55;
+        }
+
+        .aweme .point-area {
+            background: #FE2C55;
+        }
+
+        .aweme .button-submit {
+            background: #FE2C55;
+        }
+
+        .aweme .validate-pass {
+            background: #7ED321;
+        }
+
+        .aweme .validate-fail {
+            background: #7ED321;
+        }
+
+        .hotsoon .sort {
+            color: #FF4E33;
+        }
+
+        .hotsoon .button-refresh {
+            color: #FF4E33;
+        }
+
+        .hotsoon .button-refresh .icon {
+            fill: #FF4E33;
+        }
+
+        .hotsoon .point-area {
+            background: #FF4E33;
+        }
+
+        .hotsoon .button-submit {
+            background: #FF4E33;
+        }</style>
+</head>
+<body>
+<div class="div_body">
+    <header id="l-header" class="_box ">
+        <nav class="site-nav">
+            <a class="site-nav__logo js-home" href="https://bcy.net/"><img
+                        src="../static/img/email2.png" alt="半次元"></a>
+            <a class="site-nav__item js-home" href="/login">首页</a>
+            <a class="site-nav__item" href="https://bcy.net/illust"><span></span></a>
+            <a class="site-nav__item" href="https://bcy.net/novel"><span></span></a>
+            <a class="site-nav__item" href="https://bcy.net/coser"><span></span></a>
+            <a class="site-nav__item" href="https://bcy.net/group/discover"></a>
+            <a class="site-nav__item" href="https://bcy.net/video"></a>
+            <div class="site-nav__item js-link curp posr hover-show viewAppBottom" data-target="_self"
+                 data-href="/static/app" href="/static/app">
+                <i class="i-phone mr5 mt15"></i>
+                <div class="viewAppDown bordered hover-show__ele l-clearfix">
+                    <div class="l-left center mr20">
+                        <img class="mb5 qrcode" src="../static/img/default-ba46adfe70.png">
+                        <p class="c666 fz14 lh1">扫码下载 APP</p>
+                    </div>
+                    <b class="b l-left mt20 mr20"></b>
+                    <div class="l-left l-btn-app">
+                        <a class="_btn _btn--green _btn--l mb10 js-download" href="https://d.toutiao.com/RGc2/">
+                            Android版本下载
+                        </a>
+                        <a class="_btn _btn--red _btn--l js-download"
+                           href="https://itunes.apple.com/cn/app/ban-ci-yuan/id645459270">
+                            iPhone版本下载
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="l-right posr js-publish-btn">
+            <a class="site-publish _btn--red l-left">
+<span class="_icon-text">
+<i class="i-publish"></i>暂无 </span>
+            </a>
+            <div class="publish-loaf posa">
+                <a href="https://bcy.net/item/newnote?_params=%7B%22entrance%22%3A%22default%22%7D">
+                    <i class="i-note-post"></i>
+                    <div class="l-left mt10">
+                        <p class="fz16 lh1 text">图片</p>
+                        <p class="fz12 lh1 ccc mt6">绘画、COS、手办、汉服、表情包…</p>
+                    </div>
+                </a>
+                <a href="https://bcy.net/item/newarticle?_params=%7B%22entrance%22%3A%22default%22%7D">
+                    <i class="i-article-post"></i>
+                    <div class="l-left mt10">
+                        <p class="fz16 lh1 text">文字</p>
+                        <p class="fz12 lh1 ccc mt6">小说、漫评、段子、文章、碎碎念…</p>
+                    </div>
+                </a>
+                <a href="https://bcy.net/group/newgroup?_params=%7B%22entrance%22%3A%22default%22%7D">
+                    <i class="i-group-post"></i>
+                    <div class="l-left mt10">
+                        <p class="fz16 lh1 text">提问</p>
+                        <p class="fz12 lh1 ccc mt6">如何评价？如何反驳？为什么讨厌？</p>
+                    </div>
+                </a>
+                <a href="https://bcy.net/item/newvideo?_params=%7B%22entrance%22%3A%22default%22%7D%22%20data-type=%22video">
+                    <i class="i-video-post"></i>
+                    <div class="l-left mt10">
+                        <p class="fz16 lh1 text">视频</p>
+                        <p class="fz12 lh1 ccc mt6">舞蹈、剪辑、游戏、MAD、生活...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="js-headerRight">
+            <a class="headerItem l-right" href="/login">注册</a>
+            <a class="headerItem l-right" href="/login">登录</a>
+        </div>
+        <div class="l-right mr15">
+            <form action="https://bcy.net/search/home" method="get">
+                <div id="js-navSearch" class="search-input search-input--flat l-nav__search">
+                    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input
+                                type="text" maxlength="40"
+                                onfocus="$(this).parent().find(&#39;.search_link&#39;).hide();" value="" class="tt-hint"
+                                readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr"
+                                style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(235, 236, 237);"><input
+                                type="text" name="k" maxlength="40"
+                                onfocus="$(this).parent().find(&#39;.search_link&#39;).hide();"
+                                placeholder="" value="" class="tt-input" autocomplete="off"
+                                spellcheck="false" dir="auto"
+                                style="position: relative; vertical-align: top; background-color: transparent;"><pre
+                                aria-hidden="true"
+                                style="position: absolute; visibility: hidden; white-space: pre; font-family: -apple-system, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, 微软雅黑, 宋体, 黑体, arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div
+                                class="tt-menu"
+                                style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div
+                                    class="tt-dataset tt-dataset-0"></div></div></span>
+                    <input type="submit" value="">
+                </div>
+            </form>
+            <script src="../static/js/headerSearch-e7c17177a4.js"></script>
+        </div>
+    </header>
+    <div class="h50 "></div>
+    <div class="js-hideFooter bgAll posr">
+        <div class="form_center login">
+            <form action="/email_login_second" method="post">
+                <img src="../static/img/email2.png" class="logo-login" >
+                <div class="js-account hide">
+                </div>
+                <div class="js-mobile">
+                    <div class="inputLine error">
+                        <input type="text" placeholder="邮箱" name="email_name" class="input" title="邮箱账号" value="{{.Email}}">
+                    </div>
+                    <div class="inputLine posr">
+                        <input class="input" id="code" placeholder="邮箱验证码" maxlength="4" type="text">
+                        </button>
+                        <input type="submit" value="发送验证码" class="_btn--long-red mb20" style="width: 100px;position: absolute;left: 300px;">
+                    </div>
+                </div>
+                <div class="inputLine mb30">
+                    <a href="/login">用户名密码登录</a>
+                </div>
+                <input type="submit" value="登录" class="_btn--long-red mb20">
+                <div class="inputLine l-clearfix">
+                    <a class="l-left db mr15 js-wechat-login" href="javacript:void(0)"><i class="i-wechat-s"></i></a>
+                    <a class="l-left db mr15 js-sina-login" href="javacript:void(0)"><i class="i-sina-s"></i></a>
+                    <a class="l-left db mr15 js-qq-login" href="/qq_login"><i class="i-qq-s"></i></a>
+                    <a class="l-right fz16 lh30 db" href="/login">注册账号</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../static/js/login-b1457056d1.js"></script>
+</div>
+<div class="split-line js-footer-splitline " style="display: none;"></div>
+<footer id="l-footer" class="js-footer " style="display: none;">
+    <div id="app-image">
+        <img width="100" height="100" class="qrcode" src="../static/img/app-download-qrcode-9cd6a29b52.png">
+    </div>
+    <div class="l-clearfix">
+        <div class="l-footer__app">
+            <div class="l-clearfix">
+                </div>
+        </div>
+        <div class="l-footer__weixin">
+            <div class="l-clearfix">
+                <div>
+                    <span class="footer-headline">官方账号</span>
+                    <ul>
+                        <li><a href="http://weibo.com/bcycos" target="_blank">半次元Cosplay频道</a></li>
+                        <li><a href="http://weibo.com/bcyillust" target="_blank">半次元绘画频道</a></li>
+                        <li><a href="http://weibo.com/bcynovel" target="_blank">半次元写作频道</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="l-footer__user">
+            <div class="l-clearfix">
+                <span class="footer-headline">传送门</span>
+                <ul>
+                    <li><a href="https://bcy.net/static/help">帮助中心</a></li>
+                    <li>
+                        <div class="posr js-lang-hover">
+                            <span class="js-switch-lang js-lang-selection c666">语言-中文</span>
+                            <i class="i-arrow-down-gray dib vam lh18"></i>
+                            <div class="posa lang-selection round-shadow _hide">
+                                <a class="_btn--block lang-option borderBox js-lang-option" data-lang="zh"
+                                   href="javascript:;">中文</a>
+                                <div class="ph10 _box">
+                                    <hr class="hr _hr">
+                                </div>
+                                <a class="_btn--block lang-option borderBox js-lang-option" data-lang="en"
+                                   href="javascript:;">English</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="l-site-record">
+<span class="site-record">© 2019 bcy.net 版权所有<a href="http://www.miibeian.gov.cn/"
+                                                target="_blank">ICP证：浙ICP备14021595号-1</a> 浙网文[2014]0701-051号 <i
+            class="i-police-record ml5"></i>浙公网安备
+33010802002901号</span>
+        <br>
+        <span class="site-record">
+<a href="http://www.zjjubao.com/" target="_blank">浙江省互联网违法和不良信息举报中心</a>&nbsp;
+<a href="http://jb.ccm.gov.cn/12318/" target="_blank">12318全国文化市场举报网站</a>
+</span>
+    </div>
+</footer>
+<div class="footer-login-register l-footer-login-register js-footer-login-register fade">
+    <div class="row">
+        <a href="https://bcy.net/">
+            <img src="../static/img/logo_footer-afd80b6c40.png" alt="半次元bcy.net"
+                 class="footer-login-register__logo">
+        </a>
+        <h3 class="footer-login-register__headline">每种爱都很有爱，30万有爱创作者每日产粮~ </h3>
+        <div class="footer-login-register__operator">
+            <label>马上加入&nbsp;&gt;</label>
+            <a href="https://bcy.net/register">马上注册</a>
+            <a href="https://bcy.net/login">登录</a>
+        </div>
+        <div class="footer-login-register__third-party">
+            <label>一键登录</label>
+            <a href="javascript:void(0);" title="微信登录"
+               class="mt10 mr15 thridLogin thridLogin--wechat js-wechat-login"></a>
+            <a href="javascript:void(0);" title="微博登录" class="mt10 mr15 thridLogin thridLogin--weibo js-sina-login"></a>
+            <a href="javascript:void(0);" title="QQ登录" class="mt10 mr15 thridLogin thridLogin--qq js-qq-login"></a>
+        </div>
+    </div>
+</div>
+<script src="../static/js/nologinTopFixed-afadaa81e2.js"></script>
+<script>var _UID_ = '0';
+    $(function () {
+        $(document).ajaxSend(function (event, xhr, settings) {
+            if (typeof _hmt !== "undefined" && _hmt !== null) {
+                _hmt.push(['_trackEvent', 'ajax', 'send', settings.url]);
+            }
+        });
+    });</script>
+<script>(function (export_obj) {
+        if (!window['TeaAnalyticsObject']) {
+            window['TeaAnalyticsObject'] = export_obj || 'collect';
+        }
+        if (!window[window['TeaAnalyticsObject']]) {
+            function _collect() {
+                _collect.q.push(arguments);
+                return _collect;
+            }
+
+            _collect.q = _collect.q || [];
+            _collect.l = +new Date();
+            window[window['TeaAnalyticsObject']] = _collect;
+        }
+    })('collectTest');</script>
+<script src="../static/js/seed.js"></script>
+<script type="text/javascript" src="../static/js/pc_slide.js" charset="utf-8"></script>
+<script type="text/javascript" src="../static/js/pc_text.js" charset="utf-8"></script>
+<script src="../static/js/footer-faf25875ec.js"></script>
+<div style="display:none;">
+    <script>var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?330d168f9714e3aa16c5661e62c00232";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script>
+</div>
+<div id="toTop">
+    <a href="javascript:void(0);" class="toTop" style="opacity: 0;"></a>
+    <a href="javascript:void(0);" class="toFeedBack" onclick="ui.sendmessage(1053848)" style="opacity: 0;"></a>
+</div>
+
+<div id="js-templates"><!-- 发布成功提示 -->
+    <script id="tpl-post-success" type="text/template">
+        <p class="mb10"><span class="red fz30">${count}</span>&nbsp;人关注了</p>
+        <p class="blue lh24 ovf postSuccess__tags">
+            @{each tags as tag, index}
+            <span>${tag}</span>
+            @{/each}
+        </p>
+        <p class="lh1d5">TA们将会看到你的@{if type === 'group'}问题@{else}作品@{/if}</p>
+    </script>
+
+    <!-- 单条评论 -->
+    <script id="tpl-comment" type="text/template">
+        <li data-id="${id}" data-uid="${uid}" class="comment js-comment js-comment--belong-user${uid} post">
+            <div class="comment__avatar js-comment__avatar">
+                <a href="${uid|getUserSpace}" class="comment__avatar-img" target="_blank">
+                    <img src="${avatar}">
+                </a>
+            </div>
+            <div class="comment__right">
+                <div class="comment_hd">
+                    <a href="${uid|getUserSpace}" class="comment__user-name js-comment__user-name dib maxw145 cut vam"
+                       target="_blank">${uname}</a>
+                    <span class="comment__reply-time lh21">
+                    @{if utags}
+                        <span class="vam mr3">
+                            @{each utags as utag, index}
+                                <a class="_tag _tag--user" href="javascript:;"
+                                   data-utid="${utag.ut_id}">${utag.ut_name}</a>
+                            @{/each}
+                        </span>
+                        <span class="vab">${self_intro|getShort,25}</span>
+                    @{/if}
+                </span>
+                </div>
+                <div class="comment__content js-comment__content wb">
+                    <span class="js-comment-content-for-reply comment-content-for-reply">$${content}</span>
+                </div>
+                <div class="l-cleafix">
+                    <div class="minor mt2 l-left">${ctime|friendlyDate}</div>
+                    <a class="comment__reply-btn js-comment__reply-btn">回复</a>
+                    @{if showReplyZan === 'show'}
+                    <span class="comment__break-line">|</span>
+                    @{if user_liked}
+                    <a href="javascript:void(0);" class="js-commnet__unding-btn comment__ding-btn pr15"
+                       data-ding="${like_count}">已赞 ${like_count}</a>
+                    @{else}
+                    <a href="javascript:void(0);" class="js-commnet__ding-btn comment__ding-btn pr15"
+                       data-ding="${like_count}">
+                        赞
+                        @{if like_count > 0} ${like_count} @{/if}
+                    </a>
+                    @{/if}
+                    @{/if}
+                    @{if haveRightToDelete === true}
+                    <span class="comment__break-line">|</span>
+                    <a class="comment__delete-btn js-comment__delete-btn">删除</a>
+                    @{/if}
+                    @{if haveRightToDenounce === true}
+                    <a class="comment__delete-btn denounce js-denounce" href="javascript:;" data-id="${id}">举报</a>
+                    @{/if}
+                </div>
+            </div>
+        </li>
+    </script>
+
+    <!-- 单条评论不带回复的评论 -->
+    <script id="tpl-commentNoReply" type="text/template">
+        <li id="reply${id}" class="comment js-postReply subDenouceBox js-commentReply" data-id="${id}" data-uid="${uid}"
+            data-publish-id="${id}">
+            <div class="comment__avatar js-comment__avatar">
+                <a href="${uid|getUserSpace}" class="comment__avatar-img" target="_blank">
+                    <img src="${avatar}">
+                </a>
+            </div>
+            <div class="comment__right">
+                <div class="comment_hd">
+                    <div class="l-clearfix">
+                        <a href="/u/${uid}" class="comment__user-name js-comment__user-nameReply" target="_blank">${uname}</a>
+                        <span class="c999">${ctime|friendlyDate}</span>
+                        <div class="fz12 text lh1 l-clearfix l-right mt3">
+                            @{if showReplyZan === 'show'}
+                            @{if user_liked}
+                            <a href="javascript:void(0);" class="js-commnet__unding-btnReply comment__ding-btn"
+                               data-ding="${like_count}" data-reply-id="${id}">已赞 ${like_count}</a>
+                            @{else}
+                            <a href="javascript:void(0);" class="js-commnet__ding-btnReply comment__ding-btn"
+                               data-ding="${like_count}" data-reply-id="${id}">
+                                赞 @{if like_count > 0} ${like_count} @{/if}
+                            </a>
+                            @{/if}
+                            @{/if}
+                            @{if uid != mid}
+                            <span class="comment__break-line">|</span>
+                            <a class="comment__reply-btn js-comment__reply-btnReply">回复</a>
+                            @{/if}
+                            @{if haveRightToDelete == true}
+                            <span class="comment__break-line">|</span>
+                            <a class="comment__delete-btn js-comment__delete-btnReply" data-id="${id}">删除</a>
+                            @{/if}
+                            @{if haveRightToDenounce === true}
+                            <a class="comment__delete-btn subDenouce js-comment__denounce-btnReply" href="javascript:;"
+                               data-id="${id}">举报</a>
+                            @{/if}
+                        </div>
+                    </div>
+                    <div class="comment__content js-comment__content wb">
+                        <p class="lh1d5 fz14 text db js-content wb">
+                            <span class="js-comment-content-for-reply comment-content-for-reply">$${content}</span>
+                        </p>
+                        @{if multi.length > 0}
+                        <div class="mt10 l-img-g rid l-left pbn5 js-image-list" data-post-index="${id}">
+                            <ul class="image_inner">
+                                @{each multi as image, index}
+                                @{if index < 4}
+                                <li>
+                                    <a class="comment-list-image mr5 detail_clickable db" href="javascript:void(0));">
+                                        <img alt="${image.path}" src="${image.path}" data-image-index="${++index}"/>
+                                    </a>
+                                </li>
+                                @{else if index == 4 && multi.length > 4}
+                                <li>
+                                    <a href="javascript:void(0);"
+                                       class="comment-list-image more-info detail_clickable db">
+                                        <img alt="${image.path}" src="${image.path}" data-image-index="${++index}">
+                                        <div class="imgGroupMore viewmore">{:L('更多')}({$post.pic_remain})</div>
+                                    </a>
+                                </li>
+                                @{/if}
+                                @{/each}
+                            </ul>
+                        </div>
+                        <div class="js-image-plat" data-post-index="${id}">
+                            @{each multi as image, index}
+                            <hidden data-src="${image.origin}"></hidden>
+                            @{/each}
+                        </div>
+                        @{/if}
+                    </div>
+                </div>
+            </div>
+        </li>
+    </script>
+
+    <!-- 单条评论带回复的样式 -->
+    <script id="tpl-commentReply" type="text/template">
+        <li id="comment${id}" class="comment js-comment js-comment--belong-user${uid}" data-id="${id}" data-uid="${uid}"
+            data-publish-id="${id}" data-page="1" data-comments-remain="${comments_remain}" data-p-id="${post_id}">
+            <div class="comment__avatar js-comment__avatar">
+                <a href="${uid|getUserSpace}" class="comment__avatar-img" target="_blank">
+                    <img src="${avatar}">
+                </a>
+            </div>
+            <div class="comment__right">
+                <div class="comment_hd">
+                    <a href="${uid|getUserSpace}" class="comment__user-name js-comment__user-name dib maxw145 cut vam"
+                       target="_blank">${uname}</a>
+                    <span class="comment__reply-time lh21">
+                    @{if utags}
+                        <span class="vam mr3">
+                            @{each utags as utag, index}
+                                <a class="_tag _tag--user" href="javascript:;"
+                                   data-utid="${utag.ut_id}">${utag.ut_name}</a>
+                            @{/each}
+                        </span>
+                        <span class="vab">${self_intro|getShort,25}</span>
+                    @{/if}
+                </span>
+                </div>
+                <div class="comment__content js-comment__content wb">
+                    <p class="lh1d5 fz14 text db js-content wb">
+                        <span class="js-comment-content-for-reply comment-content-for-reply">$${content}</span>
+                    </p>
+                    @{if multi.length > 0}
+                    <div class="mt10 l-img-g rid l-left pbn5 js-image-list" data-post-index="${id}">
+                        <ul class="image_inner">
+                            @{each multi as image, index}
+                            @{if index < 4}
+                            <li>
+                                <a class="comment-list-image mr5 detail_clickable db" href="javascript:void(0);">
+                                    <img alt="${image.path}" src="${image.path}" data-image-index="${++index}"/>
+                                </a>
+                            </li>
+                            @{else if index == 4 && multi.length > 4}
+                            <li>
+                                <a href="javascript:void(0);" class="comment-list-image more-info detail_clickable db">
+                                    <img alt="${image.path}" src="${image.path}" data-image-index="${++index}">
+                                    <div class="imgGroupMore viewmore">{:L('更多')}({$post.pic_remain})</div>
+                                </a>
+                            </li>
+                            @{/if}
+                            @{/each}
+                        </ul>
+                    </div>
+                    <div class="js-image-plat" data-post-index="${id}">
+                        @{each multi as image, index}
+                        <hidden data-src="${image.origin}"></hidden>
+                        @{/each}
+                    </div>
+                    @{/if}
+                </div>
+
+                <div class="l-clearfix">
+                    <div class="minor mt2 l-left">${ctime|friendlyDate}</div>
+                    @{if showReplyZan === 'show'}
+                    @{if user_liked}
+                    <a href="javascript:void(0);" class="js-commnet__unding-btn comment__ding-btn pr15"
+                       data-ding="${like_count}">已赞 ${like_count}</a>
+                    @{else}
+                    <a href="javascript:void(0);" class="js-commnet__ding-btn comment__ding-btn pr15"
+                       data-ding="${like_count}">
+                        赞 @{if like_count > 0} ${like_count} @{/if}
+                    </a>
+                    @{/if}
+                    <span class="comment__break-line">|</span>
+                    @{/if}
+                    <a class="comment__reply-btn js-hide-publish">回复</a>
+                    @{if haveRightToDelete === true}
+                    <span class="comment__break-line">|</span>
+                    <a class="comment__delete-btn js-comment__delete-btn">删除</a>
+                    @{/if}
+                    @{if haveRightToDenounce === true}
+                    <a class="comment__delete-btn denounce js-denounce" href="javascript:;" data-id="${id}">举报</a>
+                    @{/if}
+                </div>
+                <div class="posr">
+
+                    <div class="l-clearfix fz12">
+                        @{if comments_count > 0}
+                        <div class="mt10 publish-box clear js-group-publish-reply">
+                            @{else}
+                            <div class="mt10 publish-box clear hide js-group-publish-reply">
+                                @{/if}
+                                <div class="publish group-publish" id="${id}">
+                                    <ul class="publish__comment-list js-publish__comment-listReply comment-list">
+                                        @{if comments_count > 0}
+                                        @{each comments as reply}
+                                        <li id="reply${reply.id}"
+                                            class="comment js-postReply js-commentReply subDenouceBox"
+                                            data-id="${reply.id}" data-uid="${reply.uid}" data-publish-id="${reply.id}">
+                                            <div class="comment__avatar js-comment__avatarReply">
+                                                <a href="/u/${reply.uid}" class="comment__avatar-img" target="_blank">
+                                                    <img src="${reply.avatar}">
+                                                </a>
+                                            </div>
+                                            <div class="comment__right">
+                                                <div class="comment_hd">
+                                                    <a href="/u/${reply.uid}"
+                                                       class="comment__user-name js-comment__user-nameReply"
+                                                       target="_blank">${reply.uname}</a>
+                                                    <span class="c999">${reply.ctime|friendlyDate}</span>
+                                                    @{if showReplyZan === 'show'}
+                                                    @{if reply.user_liked}
+                                                    <a href="javascript:void(0);"
+                                                       class="js-commnet__unding-btnReply comment__ding-btn"
+                                                       data-ding="${reply.like_count}" data-reply-id="${reply.id}">已赞
+                                                        ${reply.like_count}</a>
+                                                    @{else}
+                                                    <a href="javascript:void(0);"
+                                                       class="js-commnet__ding-btnReply comment__ding-btn"
+                                                       data-ding="${reply.like_count}" data-reply-id="${reply.id}">
+                                                        赞 @{if reply.like_count > 0} ${reply.like_count} @{/if}
+                                                    </a>
+                                                    @{/if}
+                                                    @{/if}
+                                                    @{if reply.uid != mid}
+                                                    <span class="comment__break-line">|</span>
+                                                    <a class="comment__reply-btn js-comment__reply-btnReply">回复</a>
+                                                    @{/if}
+                                                    @{if reply.haveRightToDelete === true}
+                                                    <span class="comment__break-line">|</span>
+                                                    <a class="comment__delete-btn js-comment__delete-btnReply"
+                                                       data-id="${reply.id}">删除</a>
+                                                    @{/if}
+                                                    @{if reply.haveRightToDenounce === true}
+                                                    <a class="comment__delete-btn subDenouce js-comment__denounce-btnReply"
+                                                       href="javascript:;" data-id="${reply.id}">举报</a>
+                                                    @{/if}
+                                                </div>
+                                                <div class="comment__content js-comment__content wb">
+                                                    <p class="lh1d5 fz14 text db js-content wb">
+                                                        <span class="js-comment-content-for-reply comment-content-for-reply">$${reply.content}</span>
+                                                    </p>
+                                                    @{if reply.multi.length > 0}
+                                                    <div class="mt10 l-img-g rid l-left pbn5 js-image-list"
+                                                         data-post-index="${reply.id}">
+                                                        <ul class="image_inner">
+                                                            @{each reply.multi as image, index}
+                                                            @{if index < 4}
+                                                            <li>
+                                                                <a class="reply-list-image mr5 detail_clickable db"
+                                                                   href="javascript:void(0);">
+                                                                    <img alt="${image.path}" src="${image.path}"
+                                                                         data-image-index="${++index}"/>
+                                                                </a>
+                                                            </li>
+                                                            @{else if index == 4 && multi.length > 4}
+                                                            <li>
+                                                                <a href="javascript:void(0);"
+                                                                   class="reply-list-image more-info detail_clickable">
+                                                                    <img alt="${image.path}" src="${image.path}"
+                                                                         data-image-index="${++index}">
+                                                                    <div class="imgGroupMore viewmore">
+                                                                        {:L('更多')}({$post.pic_remain})
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            @{/if}
+                                                            @{/each}
+                                                        </ul>
+                                                    </div>
+                                                    <div class="js-image-plat" data-post-index="${id}">
+                                                        @{each reply.multi as image, index}
+                                                        <hidden data-src="${image.origin}"></hidden>
+                                                        @{/each}
+                                                    </div>
+                                                    @{/if}
+                                                </div>
+                                            </div>
+                                        </li><!-- 单条的评论结束 -->
+                                        @{/each}
+                                        @{/if}
+                                    </ul>
+                                    <div class="l-clearfix">
+                                        @{if comments_remain > 0}
+                                        <div class="l-left mt5 js-comments_remainContain mt10">还有<span
+                                                    class="js-comments_remain">${comments_remain}</span>条回复，<a
+                                                    class="js-checkMoreReply" href="javascript:void(0);">点击查看</a></div>
+                                        @{/if}
+                                        @{if comments_count != 0 && comments_count}
+                                        <a class="l-right _btn _btn--default js-reply-landlord mt10"
+                                           href="javascript:void(0);">我也说一句</a>
+                                        @{/if}
+                                    </div>
+                                    <form method="post" oncomplete="false"
+                                          class="publish__form js-publish__formReply mt10 @{if comments_count !== 0 && comments_count}hide@{/if}">
+                                        <textarea id="content_${id}" name="content"
+                                                  class="publish__content-input js-publish__content-inputReply"></textarea>
+                                        <div class="l-left">
+                                            <div class="js-facetext facetext facetext--default l-left _icon-hover"
+                                                 data-target="#content_${id}">
+                                                <a href="javascript:void(0);"
+                                                   class="js-facetext-trigger facetext__trigger">
+                                                    <i class="i-facetext-l"></i>
+                                                </a>
+
+                                                <div class="_box facetext__list-wrap">
+                                                    <a class="js-facetext-close facetext__close close"
+                                                       href="javascript:void(0);"></a>
+                                                    <ul class="facetext__list">
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">(。・∀・)ノ゛</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">(TωT)</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">(･ω-｡)</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">ヾ(≧∇≦*)</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">ヾ(ﾟ∀ﾟ○)ﾂ</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">ヽ(*´Д｀*)ﾉ</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">(；ω；｀)</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">(/ω＼*)</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">(●＾U＾●)</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">(｡ゝω･)bﾞ</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">(;´ρ`)</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">（´・ω・｀）</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">∑(ﾟωﾟﾉ)ノ</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">(-д-；)</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">（＾ε＾）</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">(`_ゝ´)</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">（＞△＜）</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">m(_ _)m</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">┌(^q^ ┐)┐</a></li>
+                                                        <li class="js-facetext-item facetext__item"><a
+                                                                    href="javascript:void(0);">_(:з」∠)_</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="button" value="回 复"
+                                               class="publish__submit-btn publish__submit-btn--disabled js-publish__submit-btnReply"
+                                               disabled/>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </li>
+    </script>
+    <!-- 单条评论帖子 -->
+    <script id="tpl-post-comment" type="text/template">
+        <li data-id="${id}" data-uid="${uid}" class="comment js-comment js-comment--belong-user${uid}">
+            <div class="comment__avatar js-comment__avatar">
+                <a href="${uid|getUserSpace}" class="comment__avatar-img" target="_blank">
+                    <img src="${avatar}">
+                </a>
+            </div>
+            <div class="comment__right">
+                <div class="comment_hd">
+                    <a href="${uid|getUserSpace}" class="comment__user-name js-comment__user-name" target="_blank">${uname}</a>
+                    <span class="comment__reply-time lh21">
+                    <span class="fz12">${ctime|friendlyDate}</span>
+                </span>
+                    @{if user_liked}
+                    <a href="javascript:void(0);" class="js-commnet__unding-btn comment__ding-btn"
+                       data-ding="${like_count}">已赞 ${like_count})/a>
+                        @{else}
+                        <a href="javascript:void(0);" class="js-commnet__ding-btn comment__ding-btn"
+                           data-ding="${like_count}">
+                            赞
+                            @{if like_count > 0}(${like_count})@{/if}
+                        </a>
+                        @{/if}
+                        @{if showReplybtn == 'show'}
+                        <span class="comment__break-line">|</span>
+                        <a class="comment__reply-btn js-comment__reply-btn">回复</a>
+                        @{/if}
+                        @{if haveRightToDelete === true}
+                        <span class="comment__break-line">|</span>
+                        <a class="comment__delete-btn js-comment__delete-btn">删除</a>
+                        @{/if}
+                </div>
+                <div class="comment__content js-comment__content wb">
+                    <span class="js-comment-content-for-reply comment-content-for-reply">$${content}</span>
+                </div>
+            </div>
+        </li>
+    </script>
+
+    <!-- 单条评论的评论已赞样式 -->
+    <script id="tpl-reply-ding" type="text/template">
+        <a href="javascript:void(0);" class="js-commnet__unding-btn comment__ding-btn" data-ding="${num}">已赞 @{if num !=
+            0}${num}@{/if}</a>
+    </script>
+    <!-- 单条评论的评论取消赞样式 -->
+    <script id="tpl-reply-unding" type="text/template">
+        <a href="javascript:void(0);" class="js-commnet__ding-btn comment__ding-btn" data-ding="${num}">
+            赞
+            @{if num != 0} ${num}@{/if}</a>
+    </script>
+
+    <!-- 单条评论的detail评论已赞样式 -->
+    <script id="tpl-reply-ding-detail" type="text/template">
+        <a href="javascript:void(0);" class="js-commnet__unding-btn comment__ding-btn pr15" data-ding="${num}">已赞
+            ${num}</a>
+    </script>
+    <!-- 单条评论的detail评论取消赞样式 -->
+    <script id="tpl-reply-unding-detail" type="text/template">
+        <a href="javascript:void(0);" class="js-commnet__ding-btn comment__ding-btn pr15" data-ding="${num}">
+            赞 @{if num > 0} ${num} @{/if}</a>
+    </script>
+
+    <!-- 单条评论回复的detail评论已赞样式 -->
+    <script id="tpl-reply-comment-ding-detail" type="text/template">
+        <a href="javascript:void(0);" class="comment__ding-btn js-commnet__unding-btnReply" data-ding="${num}"
+           data-reply-id="${id}">已赞 ${num}</a>
+    </script>
+    <!-- 单条评论回复的detail评论取消赞样式 -->
+    <script id="tpl-reply-comment-unding-detail" type="text/template">
+        <a href="javascript:void(0);" class="comment__ding-btn js-commnet__ding-btnReply" data-ding="${num}"
+           data-reply-id="${id}">
+            赞 ${num}</a>
+    </script>
+
+    <!-- 菊花:表示正在加载 -->
+    <script id="tpl-loading-gif" type="text/template">
+        <i class="spinner js-loading-gif"></i>
+    </script>
+
+    <!-- 多条评论 -->
+    <script id="tpl-comments" type="text/template">
+        @{each comments as comment, index}
+        @{include "#tpl-comment", comment}
+        @{/each}
+    </script>
+    <!-- 多条评论带回复 -->
+    <script id="tpl-commentsReply" type="text/template">
+        @{each comments as comment, index}
+        @{include "#tpl-commentReply", comment}
+        @{/each}
+    </script>
+    <!-- 多条评论不带回复 -->
+    <script id="tpl-commentsNoReply" type="text/template">
+        @{each comments as comment, index}
+        @{include "#tpl-commentNoReply", comment}
+        @{/each}
+    </script>
+    <!-- 多条帖子评论 -->
+    <script id="tpl-post-comments" type="text/template">
+        @{each comments as comment, index}
+        @{include "#tpl-post-comment", comment}
+        @{/each}
+    </script>
+
+    <!-- detail页面 -->
+    <!-- detail页面关注按钮 -->
+    <script id="tpl-detail-follow" type="text/template">
+        @{if status === 'unfollow'}
+        <a class="_btn _btn--gray _btn--no-hover _btn--sm _btn--icon js-btn__follow js-follow">
+            <div class="_icon-text">
+                <i class="i-add-secondary"></i>
+                ${text}
+            </div>
+        </a>
+        @{else}
+        <div class="_btn _btn--gray _btn--no-hover _btn--secondary followedBtn js-btn__follow">
+            ${text}
+        </div>
+        @{/if}
+    </script>
+
+    <!-- detail页的已赞按钮 -->
+    <script id="tpl-detail-zan" type="text/template">
+        <div id="js-detailHasZan" class="btn btn--zaned bgF5" data-zan="${num}">
+            <i class="i-paw"></i>
+            已赞&nbsp;(${num})
+        </div>
+    </script>
+
+    <!-- 取消赞 -->
+    <script id="tpl-detail-unzan" type="text/template">
+        <div class="btn btn--pink btn--zan btn--base-border-radius" data-zan="${num}">
+            <i class="i-paw-white-l"></i>
+            赞&nbsp;(${num})
+        </div>
+    </script>
+
+    <!-- detail页对作品赞的用户 -->
+    <script id="tpl-detail-follower" type="text/template">
+        <li class="detail-followers__follower">
+            <a href="${link}" class="l-left last_userzan" target="_blank" title="${name}">
+                <img src="${avatar}">
+            </a>
+        </li>
+    </script>
+
+    <!-- TA的次元空间 -->
+    <script id="tpl-follow-block" type="text/template">
+        <div class="_btn _btn--gray _btn--no-hover _btn--block">
+            ${text}
+        </div>
+    </script>
+
+    <script id="tpl-group-module-focus" type="text/template">
+        <a class="_btn _btn--default _btn--icon _btn--sm js-focus-group" href="javascript:void(0);" data-gid="${gid}"
+           data-cancel="${cancel}">
+            <div class="_icon-text">
+                <i class="i-add-attractive"></i>关注问答
+            </div>
+        </a>
+    </script>
+
+
+    <script id="tpl-group-module-focused" type="text/template">
+        <a href="javascript:void(0);" class="groupFocus" data-gid="${gid}">
+            <span>已关注</span>
+        </a>
+    </script>
+
+    <script id="tpl-group-module-cancle-focus" type="text/template">
+        <div class="_btn-group js-unfocus-group-btn">
+            <a class="_btn _btn--default _btn--icon _btn--sm _btn--no-hover">
+                已关注
+            </a>
+            <div class="_btn-group--filter"></div>
+            <a class="_btn _btn--default _btn--sm js-unfocus-group" data-gid="${gid}">
+                取消
+            </a>
+        </div>
+    </script>
+
+    <!-- 上传图片预览 -->
+    <script id="tpl-uploadify-preview" type="text/template">
+        <div class="uploadify-preview">用户名密码登录
+            <div class="uploadify-preview__cancel js-preview-cancel">X</div>
+            <img src="${src}" data-id="${id}" class="js-preview-item"></div>
+        </div>
+    </script>
+
+    <script id="tpl-ui-confirm" type="text/template">
+        <div id="ts_ui_confirm" class="ui_confirm p20 center">
+            <span class="mb10 fz14 lh1d5 db text">$${text}</span>
+            <input type="button" value="确定" class="js-btn_b _btn _btn--red mr20">
+            <input type="button" value="取消" class="js-btn_w _btn _btn--negative">
+        </div>
+    </script>
+</div>
+</body>
+</html>

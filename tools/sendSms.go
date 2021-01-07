@@ -11,8 +11,7 @@ import (
 )
 
 
-const SMS_TLP_REGISTER  = "SMS_207760136"//注册业务的短信模板
-const SMS_TLP_LOGIN =  "SMS_207760421"//用户登录的短信模板
+const SMS_TLP_REGISTER  = "SMS_176525619"//注册业务的短信模板
 type SmsCode struct {
 	Code string `json:"code"`
 }
@@ -40,7 +39,7 @@ func SendSms(phone string,code string,templateType string)(*SmsResutl,error){
 	//batch:批量
 	request := dysmsapi.CreateSendSmsRequest()
 	request.PhoneNumbers = phone//指定要发送给的目标手机号
-	request.SignName = "区块链四班C组"//签名信息
+	request.SignName = "线上餐厅"//签名信息
 	request.TemplateCode = templateType //指定短信模板
 	//{"code":"xxxx"}:json格式
 	smsCode := SmsCode{

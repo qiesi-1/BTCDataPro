@@ -12,9 +12,6 @@ type SendSmsController struct {
 	beego.Controller
 }
 
-func (s *SendSmsController) Get(){
-	s.TplName="loginsms.html"
-}
 //验证码注册
 func (s *SendSmsController) Post(){
 	var smsLogin models.SmsLogin
@@ -49,10 +46,10 @@ func (s *SendSmsController) Post(){
 		s.Ctx.WriteString("获取验证码失败")
 		return
 	}
-
-	//保存成功
+	//保存成功，bizid
 	s.Data["Phone"] = smsLogin.Phone
 	s.Data["BizId"] = smsRecord.BizId
-
-	s.TplName="login.html"
+	///验证码登录
+	//保存成功
+	s.TplName="loginsms_second.html"
 }
