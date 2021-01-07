@@ -2,44 +2,10 @@ package tools
 
 import (
 	"BTCDataPro/entity"
-	"BTCDataPro/models"
-	"fmt"
 	"github.com/mapstructure-master"
 )
 
-func Getblockinfo(){
-	getblockchaininfo,err :=GetBlockChainInfo()
-	if err != nil {
-		fmt.Println(err.Error())
-		return
-	}
-	fmt.Println("最新区块链信息为：",getblockchaininfo.Chain)
-	fmt.Println("区块链的难度为：",getblockchaininfo.Difficulty)
-	fmt.Println("区块链上工作量总值为：",getblockchaininfo.Chainwork)
-	fmt.Println("区块链的头部：",getblockchaininfo.Headers)
-	fmt.Println("区块链的软分叉：",getblockchaininfo.Softforks)
-	info := models.Info{
-		Hash:      "",
-		Height:    0,
-		Difficult: 0,
-		Size:      0,
-		Count:     0,
-		Chain:     "",
-	}
-	//保存到数据库中
-	_, err=info.AddRpcInfo()
-}
 
-func GetBlocks()  {
-	const address  = "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
-	getblock,err := GetBlockByHash(address)
-	if err != nil {
-		fmt.Println(err.Error())
-		return
-	}
-	fmt.Println("dasd",getblock.Tx)
-}
-//
 //比特币节点命令 getblockchaininfo 的封装函数
 func GetBlockChainInfo() (*entity.BlockChainInfo, error) {
 	result, err := GetMsgByCommand("getblockchaininfo")
@@ -120,4 +86,14 @@ func GetBlockHeaderByHash(hash string) (*entity.RPCResult,error) {
 		return nil,err
 	}
 	return &block, nil
+}
+
+
+//获取最新address
+func GetNewAddress() (interface{}, error) {
+	result, err := GetMsgByCommand("getnewaddress")
+	if err != nil {
+		return "", err
+	}
+	return result.Result, err
 }

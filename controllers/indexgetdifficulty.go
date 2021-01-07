@@ -1,6 +1,9 @@
 package controllers
 
-import "github.com/astaxie/beego"
+import (
+	"BTCDataPro/tools"
+	"github.com/astaxie/beego"
+)
 
 type IndexGetDifficultyController struct {
 	beego.Controller
@@ -8,4 +11,8 @@ type IndexGetDifficultyController struct {
 
 func (i *IndexGetDifficultyController) Get(){
 	i.TplName="getdifficulty.html"
+
+	result,_:=tools.GetDifficult()
+
+	i.Data["Difficultly"]=result
 }

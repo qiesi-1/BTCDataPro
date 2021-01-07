@@ -17,7 +17,7 @@
 				width: 50%;
 				height: 300px;
 				position: relative;
-				left: 25%;
+				left: 20%;
 			}
 			
 			.kiseLw {
@@ -30,20 +30,21 @@
 				font-size: 100%;
 				font-style: normal;
 				-webkit-font-smoothing: antialiased;
-				text-rendering: optimizeLegibility;			}
+				text-rendering: optimizeLegibility;
+				opacity: 0.7}
 			
 			#left {
 				display: inline-block;
 				margin-top: 10px;
 				width: 200px;
-				background-color: beige;
+				background-color: white;
 			}
 			
 			#right {
 				display: inline-block;
 				margin-top: 10px;
 				width: 200px;
-				background-color: beige;
+				background-color: white;
 			}
 			
 			#ye {
@@ -168,12 +169,9 @@
 		<body style="background-image: url(../static/img/bg3.jpg);background-attachment:fixed;background-repeat: no-repeat;background-size: cover;">
 		<div id="top_div">
 			<img src="../static/img/email2.png" width="200px" height="75px" />
-			<div style="float: right;font-size: 20px;">
-				<a href="index.html" style="font-size: large;">返回主页</a>
-			</div>
 		</div>
 		<div>
-			<div id="npvsecond" style="border: 1px solid darkgrey;display: inline-block;">
+			<div id="npvsecond" style="display: inline-block;">
 				<div id="course">
 					<h2 id="h2_1">钱包指令</h2>
 					<ul id="ul_1">
@@ -189,17 +187,14 @@
 						</li>
 						<li>
 							<button id="">
-								<a href="index.tpl">比特币新地址</a>
+								<a href="getnewaddress.html">比特币新地址</a>
 							</button>
 						</li>
 						<li>
 							<button id="">
-								<a href="getblock.html">哈希值获取数据</a>
+								<a href="getblockbyhash.html">哈希值获取数据</a>
 							</button>
 						</li>
-					</ul>
-					<h2 id="h2_2">地址指令</h2>
-					<ul id="ul_2">
 						<li>
 							<button id="">
 								<a href="getbestblockhash.html">最新区块哈希</a>
@@ -212,45 +207,46 @@
 						</li>
 						<li>
 							<button id="">
-								<a href="getblock.html">通过哈希得数据</a>
-							</button>
-						</li>
-						<li>
-							<button id="">
 								<a href="getblockchaininfo.html">获取区块链信息</a>
 							</button>
 						</li>
-						<li>
-							<button id="">
-								<a>最新区块hash</a>
-							</button>
-						</li>
 					</ul>
-					<h2 id="h2_3">基础指令</h2>
-					<ul id="ul_3">
+					<h2 id="h2_2">敬请期待</h2>
+					<ul id="ul_2">
+
 						<li>
 							<button id="">
-								<a>最新区块hash</a>
+								<a>对等节点信息</a>
 							</button>
 						</li>
 						<li>
 							<button id="">
-								<a>最新区块hash</a>
+								<a>创建新交易</a>
 							</button>
 						</li>
 						<li>
 							<button id="">
-								<a>最新区块hash</a>
+								<a>签名交易</a>
 							</button>
 						</li>
 						<li>
 							<button id="">
-								<a>最新区块hash</a>
+								<a>发送交易</a>
 							</button>
 						</li>
 						<li>
 							<button id="">
-								<a>最新区块hash</a>
+								<a>提交区块</a>
+							</button>
+						</li>
+						<li>
+							<button id="">
+								<a>添加节点</a>
+							</button>
+						</li>
+						<li>
+							<button id="">
+								<a>返回交易池信息</a>
 							</button>
 						</li>
 					</ul>
@@ -260,7 +256,7 @@
 		</div>
 
 		<div class="bodydiv" style="height: 100px;">
-			<input type="text" name="ye" id="ye" placeholder="请输入参数" width="10px" />
+			<input type="text" name="ye" id="ye" placeholder="无参数" width="10px" />
 			<button type="button" style="height: 30px;">查询</button>
 		</div>
 		<div class="bodydiv" id="body" style="position: fixed;top: 300px;left: 600px;display: none;">
@@ -269,7 +265,7 @@
 					最新区块hash
 				</div>
 				<div id="right" >
-					<span>{{.}}</span>
+					<span>{{.Hash}}</span>
 				</div>
 			</div>
 			<div class="kiseLw">

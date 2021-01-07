@@ -1,6 +1,9 @@
 package controllers
 
-import "github.com/astaxie/beego"
+import (
+	"BTCDataPro/tools"
+	"github.com/astaxie/beego"
+)
 
 type IndexGetBlockCountController struct {
 	beego.Controller
@@ -8,4 +11,8 @@ type IndexGetBlockCountController struct {
 
 func (i *IndexGetBlockCountController) Get(){
 	i.TplName="getblockcount.html"
+
+	result,_:=tools.GetBlockCount()
+
+	i.Data["Count"]=result
 }

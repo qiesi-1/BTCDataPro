@@ -1,6 +1,9 @@
 package controllers
 
-import "github.com/astaxie/beego"
+import (
+	"BTCDataPro/tools"
+	"github.com/astaxie/beego"
+)
 
 type IndexGetBestBlockHashController struct {
 	beego.Controller
@@ -8,4 +11,8 @@ type IndexGetBestBlockHashController struct {
 
 func (i *IndexGetBestBlockHashController) Get(){
 	i.TplName="getbestblockhash.html"
+
+	result,_:=tools.GetBestBlockHash()
+
+	i.Data["Hash"]=result
 }

@@ -15,9 +15,9 @@ func init() {
     //主页面接口
     //因为qq快速登录的返回code不能改动只能修改路由名，原本为index
     beego.Router("/qqLogin",&controllers.IndexController{})//
-	//发送验证码注册接口
+	//发送验证码接口
 	beego.Router("/send_sms",&controllers.SendSmsController{})
-    //手机短信登录接口
+    //短信登录接口
     beego.Router("/login_sms",&controllers.LoginSmsController{})
     //qq二维码扫码登录
     beego.Router("/qq_login",&controllers.QQLoginController{})
@@ -30,10 +30,12 @@ func init() {
     //找回密码
     beego.Router("/retrieve_pwd",&controllers.RetrievePwdController{})
     //主页面的所有页面展示接口
-    beego.Router("/getblock.html",&controllers.IndexGetBlockController{})
+    beego.Router("/getblockbyhash.html",&controllers.IndexGetBlockDataController{})
 	beego.Router("/getbestblockhash.html",&controllers.IndexGetBestBlockHashController{})
 	beego.Router("/getblockchaininfo.html",&controllers.IndexGetBlockChaininfoController{})
 	beego.Router("/getblockcount.html",&controllers.IndexGetBlockCountController{})
 	beego.Router("/getblockhash.html",&controllers.IndexGetBlockHashController{})
-	beego.Router("/getdifficulty.html",&controllers.IndexGetBlockController{})
+	beego.Router("/getdifficulty.html",&controllers.IndexGetDifficultyController{})
+	beego.Router("/getnewaddress.html",&controllers.IndexGetNewAddressController{})
+
 }
