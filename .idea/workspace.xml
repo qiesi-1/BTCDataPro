@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12f32b99-5ea7-4402-8e87-f5d6b4a70c24" name="Default Changelist" comment="" />
+    <list default="true" id="6c6e8a3f-c542-4b3b-823f-488345e46a7e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -15,7 +29,11 @@
     </option>
   </component>
   <component name="GOROOT" path="C:\Go" />
-  <component name="ProjectId" id="1lgLyTNYCNqX2JDONhdYcZd3PFq" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/mapstructure" />
+  </component>
+  <component name="ProjectId" id="1ld36xyvwyKBL3hSwqFubzmMHyU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,75 +43,79 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
-    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoProjectSettingsConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/utils" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Goprojects\src\BtcRPC" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\goProjects\src\BcRPCCode\utils" />
+      <recent name="C:\Users\Goprojects\src\BtcRPC\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build BcRPCCode">
-    <configuration name="go build BcRPCCode (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="BcRPCCode" />
+  <component name="RunManager" selected="Go Build.go build BtcRPC/utils">
+    <configuration name="go build BtcRPC (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="BtcRPC" />
       <working_directory value="$PROJECT_DIR$/" />
-      <kind value="PACKAGE" />
+      <kind value="DIRECTORY" />
       <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="BcRPCCode" />
+      <package value="BtcRPC" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build BcRPCCode" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="BcRPCCode" />
-      <working_directory value="$PROJECT_DIR$" />
-      <useCustomBuildTags value="true" />
-      <sudo value="true" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="BcRPCCode" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build BcRPCCode/entity" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="BcRPCCode" />
+    <configuration name="go build BtcRPC" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="BtcRPC" />
       <working_directory value="$PROJECT_DIR$/" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/entity/Demo.go" />
-      <package value="BcRPCCode/entity" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/test.go" />
+      <package value="BtcRPC" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="BcRPCCode" />
+    <configuration name="go build BtcRPC/utils" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="BtcRPC" />
       <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main2.go" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/utils/BtcServices.go" />
+      <package value="BtcRPC/utils" />
+      <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build skadj.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="BcRPCCode" />
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="BtcRPC" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/skadj.go" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="BtcRPC" />
+      <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="BtcRPC" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/test.go" />
+      <package value="BtcRPC" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build BtcRPC" />
+      <item itemvalue="Go Build.go build BtcRPC (1)" />
+      <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build test.go" />
+      <item itemvalue="Go Build.go build BtcRPC/utils" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build BcRPCCode" />
-        <item itemvalue="Go Build.go build BcRPCCode/entity" />
-        <item itemvalue="Go Build.go build BcRPCCode (1)" />
-        <item itemvalue="Go Build.go build main2.go" />
-        <item itemvalue="Go Build.go build skadj.go" />
+        <item itemvalue="Go Build.go build BtcRPC/utils" />
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build BtcRPC (1)" />
+        <item itemvalue="Go Build.go build BtcRPC" />
+        <item itemvalue="Go Build.go build test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -101,70 +123,55 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="11" y="71" key="#Inspections" timestamp="1608597925351">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="722" y="40" width="813" height="680" key="#Inspections" timestamp="1608035822669">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="11" y="71" key="#Inspections/0.0.1440.860@0.0.1440.860" timestamp="1608030127971" />
-    <state x="11" y="71" key="#Inspections/0.0.1474.864@0.0.1474.864" timestamp="1608597925351" />
-    <state x="0" y="94" key="#Notifications" timestamp="1608015924027">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="722" y="40" width="813" height="680" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1608035822669" />
+    <state x="45" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609242638426">
+      <screen x="0" y="0" width="1473" height="864" />
     </state>
-    <state x="0" y="94" key="#Notifications/0.0.1440.860@0.0.1440.860" timestamp="1608015924027" />
-    <state x="176" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608038089897">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="45" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1473.864@0.0.1473.864" timestamp="1609242638426" />
+    <state x="808" y="0" key="#go_build_BtcRPC" timestamp="1608013115280">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="176" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1608038089897" />
-    <state x="159" y="175" key="#go_build_BcRPCCode" timestamp="1608016693605">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="808" y="0" key="#go_build_BtcRPC/0.0.1536.824@0.0.1536.824" timestamp="1608013115280" />
+    <state x="808" y="0" key="#go_build_BtcRPC_(1)" timestamp="1608013960683">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="159" y="175" key="#go_build_BcRPCCode/0.0.1440.860@0.0.1440.860" timestamp="1608016693605" />
-    <state x="222" y="206" key="FileChooserDialogImpl" timestamp="1608029325667">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="808" y="0" key="#go_build_BtcRPC_(1)/0.0.1536.824@0.0.1536.824" timestamp="1608013960683" />
+    <state x="828" y="166" key="FileChooserDialogImpl" timestamp="1608087152802">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="222" y="206" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1608029325667" />
-    <state width="1431" height="145" key="GridCell.Tab.0.bottom" timestamp="1608638923888">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="828" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608087152802" />
+    <state width="1430" height="119" key="GridCell.Tab.0.bottom" timestamp="1609377234959">
+      <screen x="0" y="0" width="1473" height="864" />
     </state>
-    <state width="676" height="103" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1608087145474" />
-    <state width="1431" height="145" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1608638923888" />
-    <state width="1431" height="145" key="GridCell.Tab.0.center" timestamp="1608638923888">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1430" height="119" key="GridCell.Tab.0.bottom/0.0.1473.864@0.0.1473.864" timestamp="1609377234959" />
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608041488638" />
+    <state width="1430" height="119" key="GridCell.Tab.0.center" timestamp="1609377234959">
+      <screen x="0" y="0" width="1473" height="864" />
     </state>
-    <state width="676" height="103" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1608087145474" />
-    <state width="1431" height="145" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1608638923888" />
-    <state width="1431" height="145" key="GridCell.Tab.0.left" timestamp="1608638923888">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1430" height="119" key="GridCell.Tab.0.center/0.0.1473.864@0.0.1473.864" timestamp="1609377234959" />
+    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608041488637" />
+    <state width="1430" height="119" key="GridCell.Tab.0.left" timestamp="1609377234959">
+      <screen x="0" y="0" width="1473" height="864" />
     </state>
-    <state width="676" height="103" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1608087145474" />
-    <state width="1431" height="145" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1608638923888" />
-    <state width="1431" height="145" key="GridCell.Tab.0.right" timestamp="1608638923888">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1430" height="119" key="GridCell.Tab.0.left/0.0.1473.864@0.0.1473.864" timestamp="1609377234959" />
+    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608041488637" />
+    <state width="1430" height="119" key="GridCell.Tab.0.right" timestamp="1609377234959">
+      <screen x="0" y="0" width="1473" height="864" />
     </state>
-    <state width="676" height="103" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1608087145474" />
-    <state width="1431" height="145" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1608638923888" />
-    <state width="1431" height="231" key="GridCell.Tab.1.bottom" timestamp="1608601163701">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state width="1430" height="119" key="GridCell.Tab.0.right/0.0.1473.864@0.0.1473.864" timestamp="1609377234959" />
+    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608041488638" />
+    <state x="258" y="40" key="SettingsEditor" timestamp="1609313592485">
+      <screen x="0" y="0" width="1473" height="864" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1608087145471" />
-    <state width="1431" height="231" key="GridCell.Tab.1.bottom/0.0.1474.864@0.0.1474.864" timestamp="1608601163701" />
-    <state width="1431" height="231" key="GridCell.Tab.1.center" timestamp="1608601163700">
-      <screen x="0" y="0" width="1474" height="864" />
+    <state x="258" y="40" key="SettingsEditor/0.0.1473.864@0.0.1473.864" timestamp="1609313592485" />
+    <state x="269" y="38" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608016868542" />
+    <state x="0" y="27" width="1057" height="802" key="dock-window-1" timestamp="1609317345101">
+      <screen x="0" y="0" width="1473" height="864" />
     </state>
-    <state width="1398" height="276" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1608087145470" />
-    <state width="1431" height="231" key="GridCell.Tab.1.center/0.0.1474.864@0.0.1474.864" timestamp="1608601163700" />
-    <state width="1431" height="231" key="GridCell.Tab.1.left" timestamp="1608601163700">
-      <screen x="0" y="0" width="1474" height="864" />
-    </state>
-    <state width="1398" height="276" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1608087145470" />
-    <state width="1431" height="231" key="GridCell.Tab.1.left/0.0.1474.864@0.0.1474.864" timestamp="1608601163700" />
-    <state width="1431" height="231" key="GridCell.Tab.1.right" timestamp="1608601163701">
-      <screen x="0" y="0" width="1474" height="864" />
-    </state>
-    <state width="1398" height="276" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1608087145471" />
-    <state width="1431" height="231" key="GridCell.Tab.1.right/0.0.1474.864@0.0.1474.864" timestamp="1608601163701" />
-    <state x="108" y="116" key="SettingsEditor" timestamp="1608016506672">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="108" y="116" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1608016506672" />
+    <state x="0" y="27" width="1057" height="802" key="dock-window-1/0.0.1473.864@0.0.1473.864" timestamp="1609317345101" />
+    <state x="593" y="175" width="757" height="734" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1608094673148" />
   </component>
 </project>
